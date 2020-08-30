@@ -1,2 +1,0 @@
-INDEX VERSION 1.4+C:\-Repos\tomcat\webapps\03_my-web-app\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1791350360.index

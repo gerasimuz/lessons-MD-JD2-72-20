@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="layered-arch-example:Web exploded">
+    <output-path>$PROJECT_DIR$/classes/artifacts/layered_arch_example_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="layered-arch-example/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="layered-arch-example" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

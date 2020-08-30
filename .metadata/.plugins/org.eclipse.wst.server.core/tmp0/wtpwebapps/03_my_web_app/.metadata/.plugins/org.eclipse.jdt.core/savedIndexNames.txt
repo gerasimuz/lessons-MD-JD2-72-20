@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+C:\-Repos\tomcat\webapps\03_my-web-app\.metadata\.plugins\org.eclipse.jdt.core
-2748143387.index
-2872044937.index
-1791350360.index

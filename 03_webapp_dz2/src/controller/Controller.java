@@ -26,7 +26,7 @@ public class Controller extends HttpServlet {
         String currentCommandName;
         Command command;
         currentCommandName = req.getParameter(COMMAND_NAME);
-        command= provider.getCommand(currentCommandName);
+        command = provider.getCommand(currentCommandName);
         command.execute(req,resp);
     }
 
