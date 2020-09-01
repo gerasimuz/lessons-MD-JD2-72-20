@@ -1,0 +1,91 @@
+<jsp:root xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns:c="http://java.sun.com/jsp/jstl/core"
+          xmlns:sec="http://www.springframework.org/security/tags"
+          version="2.0">
+
+    <p style="color: lawngreen; font-size: 15mm; margin-top: 2mm" align="center">
+        <em>our rooms:</em>
+    </p>
+    <table align="center">
+        <tr>
+            <td valign="middle" align="center">
+                <img src="https://www.personne.ru/upload/iblock/0ef/GardenStandardTwin.jpg" height="350 mm"/>
+            </td>
+            <td valign="middle" align="center">
+                <img src="https://balishukawedding.com/sites/default/files/gallery/accommodation/family%20room%20Bali%20garden%20resort%20.jpg"
+                     height="350 mm"/>
+            </td>
+        </tr>
+        <tr>
+            <td style="color: blue; -webkit-text-stroke-width: 0.2mm; -webkit-text-stroke-color: darkblue;font-size: 8mm"
+                valign="middle" align="center">Standart
+            </td>
+            <td style="color: blue; -webkit-text-stroke-width: 0.2mm; -webkit-text-stroke-color: darkblue;font-size: 8mm"
+                valign="middle" align="center">Family Room
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" align="center">
+                <img src="https://d1vp8nomjxwyf1.cloudfront.net/wp-content/uploads/sites/87/2017/02/17083556/Img3762x.jpg"
+                     height="350 mm"/>
+            </td>
+            <td valign="middle" align="center">
+                <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/772/77248771.jpg" height="350 mm"/>
+            </td>
+        </tr>
+        <tr>
+            <td style="color: blue; -webkit-text-stroke-width: 0.2mm; -webkit-text-stroke-color: darkblue;font-size: 8mm"
+                valign="middle" align="center">Suite
+            </td>
+            <td style="color: blue; -webkit-text-stroke-width: 0.2mm; -webkit-text-stroke-color: darkblue;font-size: 8mm"
+                valign="middle" align="center">Senior Suite
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" align="center">
+                <img src="https://360travel.by/images/gallery/hotels/1506/164268402.jpg" height="350 mm"/>
+            </td>
+            <td valign="middle" align="center">
+                <img src="https://q-ec.bstatic.com/images/hotel/max1024x768/141/141220166.jpg" height="350 mm"/>
+            </td>
+        </tr>
+        <tr>
+            <td style="color: blue; -webkit-text-stroke-width: 0.2mm; -webkit-text-stroke-color: darkblue;font-size: 8mm"
+                valign="middle" align="center">Royal Suite
+            </td>
+            <td style="color: blue; -webkit-text-stroke-width: 0.2mm; -webkit-text-stroke-color: darkblue;font-size: 8mm"
+                valign="middle" align="center">Honeymoon Suite
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" align="center">
+                <img src="https://i.pinimg.com/originals/4d/c7/d6/4dc7d6157bee1a97e3ac1f03b7d3787a.jpg"
+                     height="350 mm"/>
+            </td>
+        </tr>
+        <tr>
+            <td style="color: blue; -webkit-text-stroke-width: 0.2mm; -webkit-text-stroke-color: darkblue;font-size: 8mm"
+                valign="middle" align="center">Presidential Suite
+            </td>
+        </tr>
+    </table>
+    <p align="center">
+        <a href="${pageContext.request.contextPath}/pageuser/userbuy">
+            <button style="font-size: 5mm">Buy now</button>
+        </a>
+
+
+        <c:if test="${authUser.getLogin() != ''}">
+            <a href="${pageContext.request.contextPath}/pageuser">
+                <button style="font-size: 5mm; margin-top: 5mm">Back page user</button>
+            </a>
+        </c:if>
+
+        <a href="${pageContext.request.contextPath}/">
+            <button style="font-size: 5mm; margin-top: 5mm">Back</button>
+        </a>
+
+
+    </p>
+</jsp:root>

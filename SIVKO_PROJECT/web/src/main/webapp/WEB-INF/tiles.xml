@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="default" template="/WEB-INF/view/layouts/default.jspx">
+        <put-attribute name="header" value="/WEB-INF/view/common/header.jspx"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/view/common/footer.jspx"/>
+    </definition>
+
+    <definition name="index" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/index.jspx"/>
+    </definition>
+    <definition name="admin" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/admin.jspx"/>
+    </definition>
+    <definition name="answerForOrder" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/answerForOrder.jspx"/>
+    </definition>
+    <definition name="approvedOrder" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/approvedOrder.jspx"/>
+    </definition>
+    <definition name="login" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/login.jspx"/>
+    </definition>
+    <definition name="pageUser" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/pageUser.jspx"/>
+    </definition>
+    <definition name="signIn" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/signIn.jspx"/>
+    </definition>
+    <definition name="saveCost" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/saveCost.jspx"/>
+    </definition>
+    <definition name="updateRooms" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/updateRooms.jspx"/>
+    </definition>
+    <definition name="userBuy" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/userBuy.jspx"/>
+    </definition>
+    <definition name="userOrdersWithAnswer" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/userOrdersWithAnswer.jspx"/>
+    </definition>
+    <definition name="userOrders" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/userOrders.jspx"/>
+    </definition>
+    <definition name="viewOrder" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/viewOrder.jspx"/>
+    </definition>
+    <definition name="viewRoom" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/viewRoom.jspx"/>
+    </definition>
+    <definition name="allRoom" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/allRoom.jspx"/>
+    </definition>
+</tiles-definitions>
+

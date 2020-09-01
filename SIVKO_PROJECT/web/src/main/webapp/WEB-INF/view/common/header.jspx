@@ -1,0 +1,16 @@
+<jsp:root xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns:c="http://java.sun.com/jsp/jstl/core"
+          xmlns:sec="http://www.springframework.org/security/tags"
+          version="2.0"
+          xmlns:spring="http://www.springframework.org/tags">
+
+
+    <header class="clearfix">
+        <a href="${requestScope['javax.servlet.forward.request_uri']}?locale=ru"><button style="font-size: 3.5mm; margin-right: 1mm; margin-bottom: 1mm">RU</button></a>
+        <a href="${requestScope['javax.servlet.forward.request_uri']}?locale=en"><button style="font-size: 3.5mm">EN</button></a>
+    </header>
+</jsp:root>
+
+
+

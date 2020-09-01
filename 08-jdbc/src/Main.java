@@ -10,7 +10,7 @@ public class Main {
 
 	    try {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3333/jd2-first-db?useSSL=false&serverTimezone=UTC","root", "pass");
+        con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/jd2-first-db?useSSL=false&serverTimezone=UTC","root", "123456");
 
         String sql = "INSERT INTO users(login, password, name, surname) VALUES(?,?,?,?)";
         ps = con.prepareStatement(sql);

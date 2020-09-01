@@ -1,0 +1,62 @@
+<jsp:root xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns:c="http://java.sun.com/jsp/jstl/core"
+          xmlns:sec="http://www.springframework.org/security/tags"
+          version="2.0" xmlns:spring="http://www.springframework.org/tags">
+
+
+    <a href="${pageContext.request.contextPath}/logout">
+        <button style="font-size: 3.5mm"><spring:message code="page.out"/></button>
+    </a>
+
+
+    <p style="color: blue; font-size: 5mm" align="center">${noanswer}</p>
+    <a href="${pageContext.request.contextPath}/admin">
+        <p align="center">
+            <button style="font-size: 5mm; margin-top: 5mm">Back</button>
+        </p>
+    </a>
+    <p align="center" style="color: green; font-size: 10mm">Rooms:</p>
+    <table border="3" cellspacing="0" cellpadding="20" width="700"
+           style="color: darkblue; margin-top: 10mm" align="center">
+        <tr>
+            <th style="font-size: 7mm">Number room</th>
+            <th style="font-size: 7mm">Name room</th>
+            <th style="font-size: 7mm">Number of beds</th>
+        </tr>
+        <c:forEach items="${hotelRooms}" var="room">
+            <tr>
+                <th><input type="hidden" name="numberRoom" value="${room.numberRoom}"/>${room.numberRoom}</th>
+                <th><input type="hidden" name="nameRoom" value="${room.name}"/>${room.name}</th>
+                <th><input type="hidden" name="bed" value="${room.bed}"/>${room.bed}</th>
+            </tr>
+        </c:forEach>
+    </table>
+
+    <p style="font-size: 20mm; margin-top: 10mm" align="center">
+        <c:if test="${currentPage != 1}">
+            <a href="${pageContext.request.contextPath}/admin/allroom?page=${currentPage - 1}">
+                <button><span aria-hidden="true">&#171;</span></button>
+            </a>
+        </c:if>
+        <c:forEach begin="1" end="${pageCount}" var="i">
+            <c:choose>
+                <c:when test="${currentPage eq i}">
+                    <button>${i}</button>
+                </c:when>
+                <c:otherwise>
+                    <a href="${pageContext.request.contextPath}/admin/allroom?page=${i}">
+                        <button>${i}</button>
+                    </a>
+                </c:otherwise>
+            </c:choose>
+        </c:forEach>
+        <c:if test="${currentPage lt pageCount}">
+            <a href="${pageContext.request.contextPath}/admin/allroom?page=${currentPage + 1}">
+                <button><span aria-hidden="true">&#187;</span></button>
+            </a>
+        </c:if>
+    </p>
+
+
+</jsp:root>

@@ -1,0 +1,49 @@
+<jsp:root xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns:c="http://java.sun.com/jsp/jstl/core"
+          xmlns:sec="http://www.springframework.org/security/tags"
+          version="2.0" xmlns:spring="http://www.springframework.org/tags">
+
+    <a href="${pageContext.request.contextPath}/logout">
+        <button style="font-size: 3.5mm"><spring:message code="page.out"/></button>
+    </a>
+
+    <table width="700px" style="color: darkblue" align="center">
+        <tbody>
+        <tr>
+            <td>
+                <form action="${pageContext.request.contextPath}/pageuser/userbuy" method="post">
+                    <fieldset>
+                        <legend>Place your order</legend>
+                        <label for="Name room" style="margin-right: 2mm; margin-left: 2mm">Name room</label>
+                        <select name="listName">
+                            <c:forEach items="${listRooms}" var="room">
+                                <option id="Name room" value="${room.name}">${room.name}</option>
+                            </c:forEach>
+                        </select>
+                        <label for="Number of bed" style="margin-right: 2mm; margin-left: 2mm">Number of bed</label>
+                        <select name="listBed">
+                            <c:forEach var="i" begin="1" end="6">
+                                <option id="Number of bed" value="${i}">${i}</option>
+                            </c:forEach>
+                        </select>
+                        <label for="dateStart" style="margin-right: 2mm; margin-left: 2mm">Date Start</label>
+                        <input id="dateStart" type="date" name="dateStart" value="2020-07-10" min="2020-07-10"/>
+                        <label for="dateEnd" style="margin-right: 2mm; margin-left: 2mm">Date End</label>
+                        <input id="dateEnd" type="date" name="dateEnd" value="2020-07-10" min="2020-07-10"/>
+                        <input type="submit" value="Send"/>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+
+    </table>
+
+    <a href="${pageContext.request.contextPath}/pageuser">
+        <p align="center">
+            <button style="font-size: 5mm; margin-top: 5mm">Back</button>
+        </p>
+    </a>
+    <p style="color: red; font-size: 5mm" align="center">${error}</p>
+</jsp:root>

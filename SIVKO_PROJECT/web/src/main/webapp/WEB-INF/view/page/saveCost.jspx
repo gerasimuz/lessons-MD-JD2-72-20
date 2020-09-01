@@ -1,0 +1,49 @@
+<jsp:root xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns:c="http://java.sun.com/jsp/jstl/core"
+          xmlns:sec="http://www.springframework.org/security/tags"
+          version="2.0" xmlns:spring="http://www.springframework.org/tags">
+
+    <a href="${pageContext.request.contextPath}/logout">
+        <button style="font-size: 3.5mm"><spring:message code="page.out"/></button>
+    </a>
+
+    <table width="700px" style="color: darkblue" align="center">
+        <tbody>
+        <tr>
+            <td>
+                <form>
+                    <fieldset>
+                        <legend>Cost save:</legend>
+                        <p align="center">
+                            <label for="Cost delete"
+                                   style="margin-right: 2mm; margin-left: 2mm">Old cost:</label>
+                            <select name="costList">
+                                <c:forEach items="${costList}" var="number">
+                                    <option id="Cost delete" value="${number.cost}">${number.cost}</option>
+                                </c:forEach>
+                            </select>
+                            <label for="cost">Cost</label>
+                            <input id="cost" type="number" name="cost"/><br/>
+
+                            <button formaction="${pageContext.request.contextPath}/admin/savecost"
+                                    formmethod="post"
+                                    style="margin-top: 2mm" type="submit" name="Save">Save
+                            </button>
+                        </p>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+
+    </table>
+    <a href="${pageContext.request.contextPath}/admin">
+        <p align="center">
+            <button style="font-size: 5mm; margin-top: 5mm">Back</button>
+        </p>
+    </a>
+    <p style="color: chartreuse; font-size: 5mm" align="center">
+        <c:if test="${message ne null}">&#10003;</c:if>${message}</p>
+
+</jsp:root>

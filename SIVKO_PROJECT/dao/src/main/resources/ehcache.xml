@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache>
+    <defaultCache maxEntriesLocalHeap="20"
+                  eternal="false"
+                  timeToIdleSeconds="120"
+                  timeToLiveSeconds="200"
+                  memoryStoreEvictionPolicy="LRU"/>
+    <cache name="com.github.nastyasivko.project_final.dao.entity.LoginUserEntity"
+           maxEntriesLocalHeap="2"
+           eternal="true">
+    </cache>
+    <cache name="com.github.nastyasivko.project_final.dao.entity.UserEntity"
+           maxEntriesLocalHeap="2"
+           eternal="false"
+           timeToIdleSeconds="300"
+           timeToLiveSeconds="600">
+        <persistence strategy="localTempSwap"/>
+    </cache>
+    <cache name="com.github.nastyasivko.project_final.dao.entity.UserOrderEntity"
+           maxEntriesLocalHeap="2"
+           eternal="false"
+           timeToIdleSeconds="300"
+           timeToLiveSeconds="600">
+        <persistence strategy="localTempSwap"/>
+    </cache>
+    <cache name="org.hibernate.cache.StandardQueryCache"
+           maxEntriesLocalHeap="100"
+           eternal="false"
+           timeToLiveSeconds="120">
+        <persistence strategy="localTempSwap"/>
+    </cache>
+</ehcache>

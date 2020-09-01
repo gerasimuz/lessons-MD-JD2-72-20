@@ -1,0 +1,71 @@
+<jsp:root xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns:c="http://java.sun.com/jsp/jstl/core"
+          xmlns:sec="http://www.springframework.org/security/tags"
+          version="2.0" xmlns:spring="http://www.springframework.org/tags">
+
+    <a href="${pageContext.request.contextPath}/logout">
+        <button style="font-size: 3.5mm"><spring:message code="page.out"/></button>
+    </a>
+
+
+    <p style="color: crimson; font-size: 10mm" align="center">Welcome
+        <c:choose>
+            <c:when test="${authUser.getLogin() != ''}">
+                ${authUser.getLogin()} !<br/>
+            </c:when>
+            <c:otherwise>
+                !<br/>
+            </c:otherwise>
+        </c:choose>
+    </p>
+
+    <p style="color: magenta; font-size: 5mm" align="center">${done}</p>
+    <table align="center">
+        <tr>
+            <td>
+                <a href="${pageContext.request.contextPath}/viewroom">
+                    <button style="font-size: 5mm">Look at rooms</button>
+                </a>
+            </td>
+            <td>
+                <a href="${pageContext.request.contextPath}/pageuser/userbuy">
+                    <jsp:scriptlet>
+                        session.getAttribute("authUser");
+                    </jsp:scriptlet>
+                    <button style="font-size: 5mm">Buy now</button>
+                </a>
+            </td>
+            <td>
+                <a href="${pageContext.request.contextPath}/pageuser/myorder">
+                    <button style="font-size: 5mm">My orderds</button>
+                </a>
+            </td>
+            <td>
+                <a href="${pageContext.request.contextPath}/pageuser/myorderwithanswer">
+                    <button style="font-size: 5mm">My orderds with answer</button>
+                </a>
+            </td>
+        </tr>
+    </table>
+    <table width="700px" style="color: darkblue" align="center">
+        <tbody>
+        <tr>
+            <td>
+                <form action="${pageContext.request.contextPath}/pageuser" method="post">
+                    <fieldset>
+                        <legend>Update password</legend>
+                        <input style="margin-right: 2mm; margin-left: 2mm" type="hidden"
+                               name="oldPassword">My password: ${authUser.password} ; </input>
+                        <label for="password" style="margin-right: 2mm; margin-left: 2mm">New password</label>
+                        <input id="password" type="text" name="password"/>
+                        <input type="submit" value="update"/>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+
+    </table>
+    <p style="color: lightseagreen; font-size: 5mm" align="center">${donePassword}</p>
+</jsp:root>
