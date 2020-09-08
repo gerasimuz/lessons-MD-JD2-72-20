@@ -1,6 +1,6 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
-<html lang="en"><head><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="../images/docs-stylesheet.css" rel="stylesheet" type="text/css"><title>Apache Tomcat 8 Configuration Reference (8.5.57) - System Properties</title></head><body><div id="wrapper"><header><div id="header"><div><div><div class="logo noPrint"><a href="https://tomcat.apache.org/"><img alt="Tomcat Home" src="../images/tomcat.png"></a></div><div style="height: 1px;"></div><div class="asfLogo noPrint"><a href="https://www.apache.org/" target="_blank"><img src="../images/asf-logo.svg" alt="The Apache Software Foundation" style="width: 266px; height: 83px;"></a></div><h1>Apache Tomcat 8 Configuration Reference</h1><div class="versionInfo">
-          Version 8.5.57,
+<html lang="en"><head><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="../images/docs-stylesheet.css" rel="stylesheet" type="text/css"><title>Apache Tomcat 9 Configuration Reference (9.0.37) - System Properties</title></head><body><div id="wrapper"><header><div id="header"><div><div><div class="logo noPrint"><a href="https://tomcat.apache.org/"><img alt="Tomcat Home" src="../images/tomcat.png"></a></div><div style="height: 1px;"></div><div class="asfLogo noPrint"><a href="https://www.apache.org/" target="_blank"><img src="../images/asf-logo.svg" alt="The Apache Software Foundation" style="width: 266px; height: 83px;"></a></div><h1>Apache Tomcat 9 Configuration Reference</h1><div class="versionInfo">
+          Version 9.0.37,
           <time datetime="2020-06-30">Jun 30 2020</time></div><div style="height: 1px;"></div><div style="clear: left;"></div></div></div></div></header><div id="middle"><div><div id="mainLeft" class="noprint"><div><nav><div><h2>Links</h2><ul><li><a href="../index.html">Docs Home</a></li><li><a href="index.html">Config Ref. Home</a></li><li><a href="https://wiki.apache.org/tomcat/FAQ">FAQ</a></li><li><a href="#comments_section">User Comments</a></li></ul></div><div><h2>Top Level Elements</h2><ul><li><a href="server.html">Server</a></li><li><a href="service.html">Service</a></li></ul></div><div><h2>Executors</h2><ul><li><a href="executor.html">Executor</a></li></ul></div><div><h2>Connectors</h2><ul><li><a href="http.html">HTTP/1.1</a></li><li><a href="http2.html">HTTP/2</a></li><li><a href="ajp.html">AJP</a></li></ul></div><div><h2>Containers</h2><ul><li><a href="context.html">Context</a></li><li><a href="engine.html">Engine</a></li><li><a href="host.html">Host</a></li><li><a href="cluster.html">Cluster</a></li></ul></div><div><h2>Nested Components</h2><ul><li><a href="cookie-processor.html">CookieProcessor</a></li><li><a href="credentialhandler.html">CredentialHandler</a></li><li><a href="globalresources.html">Global Resources</a></li><li><a href="jar-scanner.html">JarScanner</a></li><li><a href="jar-scan-filter.html">JarScanFilter</a></li><li><a href="listeners.html">Listeners</a></li><li><a href="loader.html">Loader</a></li><li><a href="manager.html">Manager</a></li><li><a href="realm.html">Realm</a></li><li><a href="resources.html">Resources</a></li><li><a href="sessionidgenerator.html">SessionIdGenerator</a></li><li><a href="valve.html">Valve</a></li></ul></div><div><h2>Cluster Elements</h2><ul><li><a href="cluster.html">Cluster</a></li><li><a href="cluster-manager.html">Manager</a></li><li><a href="cluster-channel.html">Channel</a></li><li><a href="cluster-membership.html">Channel/Membership</a></li><li><a href="cluster-sender.html">Channel/Sender</a></li><li><a href="cluster-receiver.html">Channel/Receiver</a></li><li><a href="cluster-interceptor.html">Channel/Interceptor</a></li><li><a href="cluster-valve.html">Valve</a></li><li><a href="cluster-deployer.html">Deployer</a></li><li><a href="cluster-listener.html">ClusterListener</a></li></ul></div><div><h2>web.xml</h2><ul><li><a href="filter.html">Filter</a></li></ul></div><div><h2>Other</h2><ul><li><a href="systemprops.html">System properties</a></li><li><a href="jaspic.html">JASPIC</a></li></ul></div></nav></div></div><div id="mainRight"><div id="content"><h2>System Properties</h2><h3 id="Table_of_Contents">Table of Contents</h3><div class="text">
 <ul><li><a href="#Introduction">Introduction</a></li><li><a href="#Property_replacements">Property replacements</a></li><li><a href="#Clustering">Clustering</a></li><li><a href="#Expression_Language">Expression Language</a></li><li><a href="#Jasper">Jasper</a></li><li><a href="#Security">Security</a></li><li><a href="#Specifications">Specifications</a></li><li><a href="#Sessions">Sessions</a></li><li><a href="#Logging">Logging</a></li><li><a href="#JAR_Scanning">JAR Scanning</a></li><li><a href="#Websockets">Websockets</a></li><li><a href="#Other">Other</a></li></ul>
 </div><h3 id="Introduction">Introduction</h3><div class="text">
@@ -220,9 +220,6 @@
       <li><code>org.apache.catalina.session.<br>StandardSession.ACTIVITY_CHECK</code></li>
       <li><code>org.apache.catalina.session.<br>StandardSession.LAST_ACCESS_AT_START</code></li>
       <li><code>org.apache.tomcat.util.http.<br>ServerCookie.STRICT_NAMING</code></li>
-      <li>The <code>URIEncoding</code> attribute of any
-          <a href="http.html">HTTP connector</a> or
-          <a href="ajp.html">AJP connector</a> element.</li>
       <li>The <code>resourceOnlyServlets</code> attribute of any
           <a href="context.html">Context</a> element.</li>
       <li>The <code>tldValidation</code> attribute of any
@@ -442,15 +439,7 @@
           Property
         </th><th style="width: 85%;">
           Description
-        </th></tr><tr><td><code class="propertyName">org.apache.coyote. USE_CUSTOM_STATUS_MSG_IN_HEADER</code></td><td><p>If this is
-      <code>true</code>, custom HTTP status messages will be used within HTTP
-      headers. If a custom message is specified that is not valid for use in an
-      HTTP header (as defined by RFC2616) then the custom message will be
-      ignored and the default message used.</p>
-      <p>If not specified, the default value of <code>false</code> will be used.</p>
-      <p><strong>Note:</strong> This option is deprecated and will be removed
-      in Tomcat 9. The reason phrase will not be sent.</p>
-    </td></tr><tr><td><code class="propertyName">catalina.useNaming</code></td><td>
+        </th></tr><tr><td><code class="propertyName">catalina.useNaming</code></td><td>
       <p>If this is <code>false</code> it will override the
       <code>useNaming</code> attribute for all <a href="context.html">
       Context</a> elements.</p>
@@ -469,7 +458,11 @@
       <a href="engine.html">Engine</a> element. It does not override the value
       configured on the <a href="engine.html">Engine</a> element.</p>
     </td></tr><tr><td><code class="propertyName">catalina.config</code></td><td>
-      <p>The URL for the catalina.properties configuration file.</p>
+      <p>The location from which to load the catalina.properties configuration
+      file. This may be an absolute URL, a relative (to the current working
+      directory) URL or an alternative file name in which case Tomcat will
+      attempt to load the file from the default location of
+      <code>$CATALINA_BASE/conf/</code>.</p>
     </td></tr><tr><td><code class="propertyName">tomcat.util.buf.StringCache.byte.enabled</code></td><td>
       <p>If <code>true</code>, the String cache is enabled for
       <code>ByteChunk</code>.</p>
@@ -501,8 +494,11 @@
       <p>If not specified, the default value of <code>true</code> will be used.</p>
     </td></tr><tr><td><code class="propertyName">org.apache.catalina.startup. EXIT_ON_INIT_FAILURE</code></td><td>
       <p>If <code>true</code>, the server will exit if an exception happens
-         during the server initialization phase.</p>
-      <p>If not specified, the default value of <code>false</code> will be used.</p>
+      during the server initialization phase. To support this feature, this
+      system property is used as the default for the
+      <strong>throwOnFailure</strong> attribute of a Connector.</p>
+      <p>If not specified, the default value of <code>false</code> will be
+      used.</p>
     </td></tr><tr><td><code class="propertyName">org.apache.catalina.startup. RealmRuleSet.MAX_NESTED_REALM_LEVELS</code></td><td>
       <p>The CombinedRealm allows nested Realms. This property controls the
       maximum permitted number of levels of nesting.</p>
@@ -511,18 +507,6 @@
       <p>The NestedCredentialHandler allows nested CredentialHandlers. This
       property controls the maximum permitted number of levels of nesting.</p>
       <p>If not specified, the default value of <code>3</code> will be used.</p>
-    </td></tr><tr><td><code class="propertyName">tomcat.util.http.parser.HttpParser. requestTargetAllow</code></td><td>
-      <p><i>This system property is deprecated. Use the
-      <code>relaxedPathChars</code> and <code>relaxedQueryChars</code>
-      attributes of the Connector instead. These attributes permit a wider range
-      of characters to be configured as valid.</i></p>
-      <p>A string comprised of characters the server should allow even when they are not encoded.
-      These characters would normally result in a 400 status.</p>
-      <p>The acceptable characters for this property are: <code>|</code>, <code>{</code>
-      , and <code>}</code></p>
-      <p><strong>WARNING</strong>: Use of this option may expose the server to CVE-2016-6816.
-      </p>
-      <p>If not specified, the default value of <code>null</code> will be used.</p>
     </td></tr></table>
 
 </div></div></div></div></div><footer><div id="footer">

@@ -1,0 +1,89 @@
+<jsp:root xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns:c="http://java.sun.com/jsp/jstl/core"
+          xmlns:sec="http://www.springframework.org/security/tags"
+          version="2.0" xmlns:spring="http://www.springframework.org/tags">
+
+    <a href="${pageContext.request.contextPath}/logout">
+        <button style="font-size: 3.5mm"><spring:message code="page.out"/></button>
+    </a>
+
+    <table width="700px" style="color: darkblue" align="center">
+        <tbody>
+        <tr>
+            <td>
+                <form>
+                    <fieldset>
+                        <legend>Room save:</legend>
+                        <p align="center">
+                            <label for="numberRoom">Number room</label>
+                            <input id="numberRoom" type="text" name="numberRoom"/><br/>
+
+                            <label for="nameRoom">Name room</label>
+                            <input id="nameRoom" type="text" name="nameRoom"/><br/>
+
+                            <label for="bed">Number of beds</label>
+                            <input id="bed" type="text" name="bed"/><br/>
+
+                            <button formaction="${pageContext.request.contextPath}/admin/updateroom/save"
+                                    formmethod="post"
+                                    style="margin-top: 2mm" type="submit" name="Save">Save
+                            </button>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Room update:</legend>
+                        <p align="center">
+                            <label for="Number room" style="margin-right: 2mm; margin-left: 2mm">Number room</label>
+                            <select name="listNumberOld">
+                                <c:forEach items="${numberRoomList}" var="number">
+                                    <option id="Number room" value="${number}">${number}</option>
+                                </c:forEach>
+                            </select>
+                            <label for="numberRoomUpdate">Number room</label>
+                            <input id="numberRoomUpdate" type="text" name="numberRoomUpdate"/><br/>
+
+                            <label for="nameRoomUpdate">Name room</label>
+                            <input id="nameRoomUpdate" type="text" name="nameRoomUpdate"/><br/>
+
+                            <label for="bedUpdate">Number of beds</label>
+                            <input id="bedUpdate" type="text" name="bedUpdate"/><br/>
+
+                            <button formaction="${pageContext.request.contextPath}/admin/updateroom/update"
+                                    formmethod="post"
+                                    style="margin-top: 2mm" type="submit" name="Update">Update
+                            </button>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Room delete:</legend>
+                        <p align="center">
+                            <label for="Number room delete"
+                                   style="margin-right: 2mm; margin-left: 2mm">Number room</label>
+                            <select name="numberRoomOld">
+                                <c:forEach items="${numberRoomList}" var="number">
+                                    <option id="Number room delete" value="${number}">${number}</option>
+                                </c:forEach>
+                            </select>
+
+                            <button formaction="${pageContext.request.contextPath}/admin/updateroom/delete"
+                                    formmethod="post"
+                                    style="margin-top: 2mm" type="submit" name="Delete">Delete
+                            </button>
+                        </p>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+
+    </table>
+
+    <p style="color: magenta; font-size: 5mm" align="center">
+        <c:if test="${message ne null}">&#10003;</c:if>${message}</p>
+    <a href="${pageContext.request.contextPath}/admin">
+        <p align="center">
+            <button style="font-size: 5mm; margin-top: 5mm">Back</button>
+        </p>
+    </a>
+</jsp:root>

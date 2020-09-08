@@ -1,0 +1,11 @@
+<jsp:root xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns:spring="http://www.springframework.org/tags"
+          version="2.0">
+    <footer class="newFooter">
+        <div class="footer">
+            <p align="center" style="color: blueviolet; font-size: 5mm"><spring:message code="page.footer"/></p>
+        </div>
+    </footer>
+
+</jsp:root>

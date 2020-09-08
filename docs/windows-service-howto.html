@@ -1,16 +1,16 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
-<html lang="en"><head><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="./images/docs-stylesheet.css" rel="stylesheet" type="text/css"><title>Apache Tomcat 8 (8.5.57) - Windows Service How-To</title><meta name="author" content="Mladen Turk"></head><body><div id="wrapper"><header><div id="header"><div><div><div class="logo noPrint"><a href="https://tomcat.apache.org/"><img alt="Tomcat Home" src="./images/tomcat.png"></a></div><div style="height: 1px;"></div><div class="asfLogo noPrint"><a href="https://www.apache.org/" target="_blank"><img src="./images/asf-logo.svg" alt="The Apache Software Foundation" style="width: 266px; height: 83px;"></a></div><h1>Apache Tomcat 8</h1><div class="versionInfo">
-          Version 8.5.57,
-          <time datetime="2020-06-30">Jun 30 2020</time></div><div style="height: 1px;"></div><div style="clear: left;"></div></div></div></div></header><div id="middle"><div><div id="mainLeft" class="noprint"><div><nav><div><h2>Links</h2><ul><li><a href="index.html">Docs Home</a></li><li><a href="https://wiki.apache.org/tomcat/FAQ">FAQ</a></li><li><a href="#comments_section">User Comments</a></li></ul></div><div><h2>User Guide</h2><ul><li><a href="introduction.html">1) Introduction</a></li><li><a href="setup.html">2) Setup</a></li><li><a href="appdev/index.html">3) First webapp</a></li><li><a href="deployer-howto.html">4) Deployer</a></li><li><a href="manager-howto.html">5) Manager</a></li><li><a href="host-manager-howto.html">6) Host Manager</a></li><li><a href="realm-howto.html">7) Realms and AAA</a></li><li><a href="security-manager-howto.html">8) Security Manager</a></li><li><a href="jndi-resources-howto.html">9) JNDI Resources</a></li><li><a href="jndi-datasource-examples-howto.html">10) JDBC DataSources</a></li><li><a href="class-loader-howto.html">11) Classloading</a></li><li><a href="jasper-howto.html">12) JSPs</a></li><li><a href="ssl-howto.html">13) SSL/TLS</a></li><li><a href="ssi-howto.html">14) SSI</a></li><li><a href="cgi-howto.html">15) CGI</a></li><li><a href="proxy-howto.html">16) Proxy Support</a></li><li><a href="mbeans-descriptors-howto.html">17) MBeans Descriptors</a></li><li><a href="default-servlet.html">18) Default Servlet</a></li><li><a href="cluster-howto.html">19) Clustering</a></li><li><a href="balancer-howto.html">20) Load Balancer</a></li><li><a href="connectors.html">21) Connectors</a></li><li><a href="monitoring.html">22) Monitoring and Management</a></li><li><a href="logging.html">23) Logging</a></li><li><a href="apr.html">24) APR/Native</a></li><li><a href="virtual-hosting-howto.html">25) Virtual Hosting</a></li><li><a href="aio.html">26) Advanced IO</a></li><li><a href="extras.html">27) Additional Components</a></li><li><a href="maven-jars.html">28) Mavenized</a></li><li><a href="security-howto.html">29) Security Considerations</a></li><li><a href="windows-service-howto.html">30) Windows Service</a></li><li><a href="windows-auth-howto.html">31) Windows Authentication</a></li><li><a href="jdbc-pool.html">32) Tomcat's JDBC Pool</a></li><li><a href="web-socket-howto.html">33) WebSocket</a></li><li><a href="rewrite.html">34) Rewrite</a></li></ul></div><div><h2>Reference</h2><ul><li><a href="RELEASE-NOTES.txt">Release Notes</a></li><li><a href="config/index.html">Configuration</a></li><li><a href="api/index.html">Tomcat Javadocs</a></li><li><a href="servletapi/index.html">Servlet 4.0 Javadocs</a></li><li><a href="jspapi/index.html">JSP 2.3 Javadocs</a></li><li><a href="elapi/index.html">EL 3.0 Javadocs</a></li><li><a href="websocketapi/index.html">WebSocket 1.1 Javadocs</a></li><li><a href="jaspicapi/index.html">JASPIC 1.1 Javadocs</a></li><li><a href="annotationapi/index.html">Common Annotations 1.2 Javadocs</a></li><li><a href="https://tomcat.apache.org/connectors-doc/">JK 1.2 Documentation</a></li></ul></div><div><h2>Apache Tomcat Development</h2><ul><li><a href="building.html">Building</a></li><li><a href="changelog.html">Changelog</a></li><li><a href="https://wiki.apache.org/tomcat/TomcatVersions">Status</a></li><li><a href="developers.html">Developers</a></li><li><a href="architecture/index.html">Architecture</a></li><li><a href="funcspecs/index.html">Functional Specs.</a></li><li><a href="tribes/introduction.html">Tribes</a></li></ul></div></nav></div></div><div id="mainRight"><div id="content"><h2>Windows Service How-To</h2><h3 id="Table_of_Contents">Table of Contents</h3><div class="text">
+<html lang="en"><head><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="./images/docs-stylesheet.css" rel="stylesheet" type="text/css"><title>Apache Tomcat 9 (9.0.37) - Windows Service How-To</title><meta name="author" content="Mladen Turk"></head><body><div id="wrapper"><header><div id="header"><div><div><div class="logo noPrint"><a href="https://tomcat.apache.org/"><img alt="Tomcat Home" src="./images/tomcat.png"></a></div><div style="height: 1px;"></div><div class="asfLogo noPrint"><a href="https://www.apache.org/" target="_blank"><img src="./images/asf-logo.svg" alt="The Apache Software Foundation" style="width: 266px; height: 83px;"></a></div><h1>Apache Tomcat 9</h1><div class="versionInfo">
+          Version 9.0.37,
+          <time datetime="2020-06-30">Jun 30 2020</time></div><div style="height: 1px;"></div><div style="clear: left;"></div></div></div></div></header><div id="middle"><div><div id="mainLeft" class="noprint"><div><nav><div><h2>Links</h2><ul><li><a href="index.html">Docs Home</a></li><li><a href="https://wiki.apache.org/tomcat/FAQ">FAQ</a></li><li><a href="#comments_section">User Comments</a></li></ul></div><div><h2>User Guide</h2><ul><li><a href="introduction.html">1) Introduction</a></li><li><a href="setup.html">2) Setup</a></li><li><a href="appdev/index.html">3) First webapp</a></li><li><a href="deployer-howto.html">4) Deployer</a></li><li><a href="manager-howto.html">5) Manager</a></li><li><a href="host-manager-howto.html">6) Host Manager</a></li><li><a href="realm-howto.html">7) Realms and AAA</a></li><li><a href="security-manager-howto.html">8) Security Manager</a></li><li><a href="jndi-resources-howto.html">9) JNDI Resources</a></li><li><a href="jndi-datasource-examples-howto.html">10) JDBC DataSources</a></li><li><a href="class-loader-howto.html">11) Classloading</a></li><li><a href="jasper-howto.html">12) JSPs</a></li><li><a href="ssl-howto.html">13) SSL/TLS</a></li><li><a href="ssi-howto.html">14) SSI</a></li><li><a href="cgi-howto.html">15) CGI</a></li><li><a href="proxy-howto.html">16) Proxy Support</a></li><li><a href="mbeans-descriptors-howto.html">17) MBeans Descriptors</a></li><li><a href="default-servlet.html">18) Default Servlet</a></li><li><a href="cluster-howto.html">19) Clustering</a></li><li><a href="balancer-howto.html">20) Load Balancer</a></li><li><a href="connectors.html">21) Connectors</a></li><li><a href="monitoring.html">22) Monitoring and Management</a></li><li><a href="logging.html">23) Logging</a></li><li><a href="apr.html">24) APR/Native</a></li><li><a href="virtual-hosting-howto.html">25) Virtual Hosting</a></li><li><a href="aio.html">26) Advanced IO</a></li><li><a href="maven-jars.html">27) Mavenized</a></li><li><a href="security-howto.html">28) Security Considerations</a></li><li><a href="windows-service-howto.html">29) Windows Service</a></li><li><a href="windows-auth-howto.html">30) Windows Authentication</a></li><li><a href="jdbc-pool.html">31) Tomcat's JDBC Pool</a></li><li><a href="web-socket-howto.html">32) WebSocket</a></li><li><a href="rewrite.html">33) Rewrite</a></li><li><a href="cdi.html">34) CDI 2 and JAX-RS</a></li><li><a href="graal.html">35) GraalVM Support</a></li></ul></div><div><h2>Reference</h2><ul><li><a href="RELEASE-NOTES.txt">Release Notes</a></li><li><a href="config/index.html">Configuration</a></li><li><a href="api/index.html">Tomcat Javadocs</a></li><li><a href="servletapi/index.html">Servlet 4.0 Javadocs</a></li><li><a href="jspapi/index.html">JSP 2.3 Javadocs</a></li><li><a href="elapi/index.html">EL 3.0 Javadocs</a></li><li><a href="websocketapi/index.html">WebSocket 1.1 Javadocs</a></li><li><a href="jaspicapi/index.html">JASPIC 1.1 Javadocs</a></li><li><a href="annotationapi/index.html">Common Annotations 1.3 Javadocs</a></li><li><a href="https://tomcat.apache.org/connectors-doc/">JK 1.2 Documentation</a></li></ul></div><div><h2>Apache Tomcat Development</h2><ul><li><a href="building.html">Building</a></li><li><a href="changelog.html">Changelog</a></li><li><a href="https://wiki.apache.org/tomcat/TomcatVersions">Status</a></li><li><a href="developers.html">Developers</a></li><li><a href="architecture/index.html">Architecture</a></li><li><a href="funcspecs/index.html">Functional Specs.</a></li><li><a href="tribes/introduction.html">Tribes</a></li></ul></div></nav></div></div><div id="mainRight"><div id="content"><h2>Windows Service How-To</h2><h3 id="Table_of_Contents">Table of Contents</h3><div class="text">
 <ul><li><a href="#Tomcat_service_application">Tomcat service application</a></li><li><a href="#Tomcat_monitor_application">Tomcat monitor application</a></li><li><a href="#Command_line_arguments">Command line arguments</a></li><li><a href="#Command_line_parameters">Command line parameters</a></li><li><a href="#Installing_services">Installing services</a></li><li><a href="#Updating_services">Updating services</a></li><li><a href="#Removing_services">Removing services</a></li><li><a href="#Debugging_services">Debugging services</a></li><li><a href="#Multiple_Instances">Multiple Instances</a></li></ul>
 </div><h3 id="Tomcat_service_application">Tomcat service application</h3><div class="text">
 <p>
-    <b>Tomcat8</b> is a service application for running Tomcat
-    8 as a Windows service.
+    <b>Tomcat9</b> is a service application for running Tomcat
+    9 as a Windows service.
 </p>
 </div><h3 id="Tomcat_monitor_application">Tomcat monitor application</h3><div class="text">
 <p>
-    <b>Tomcat8w</b> is a GUI application for monitoring and
+    <b>Tomcat9w</b> is a GUI application for monitoring and
     configuring Tomcat services.
 </p>
     <p>The available command line options are:</p>
@@ -38,7 +38,7 @@
         <td>Run the service as console application</td>
         <td>This is the default operation. It is called if the no option is
             provided. The ServiceName is the name of the executable without
-            exe suffix, meaning Tomcat8</td>
+            exe suffix, meaning Tomcat9</td>
     </tr>
     <tr><td><b>//RS//</b></td>
         <td>Run the service</td>
@@ -313,7 +313,7 @@ a user to use for the installation of the service.
 </p>
 <p>
 <strong>NOTE:</strong> If User Account Control (UAC) is enabled you will be
-asked for additional privileges when 'Tomcat8.exe' is launched by
+asked for additional privileges when 'Tomcat9.exe' is launched by
 the script.<br>
 If you want to pass additional options to service installer as
 <code>PR_*</code> environment variables, you have to either configure them
@@ -324,7 +324,7 @@ prompt for the current directory from the Explorer
 by clicking on the "File" menu bar). See issue <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=56143">56143</a> for details.
 </p>
 
-<div class="codeBox"><pre><code>Install the service named 'Tomcat8'
+<div class="codeBox"><pre><code>Install the service named 'Tomcat9'
 C:\&gt; service.bat install</code></pre></div>
 
 <p>There is a 2nd optional parameter that lets you specify the name of the
@@ -334,7 +334,7 @@ service, as displayed in Windows services.</p>
 C:\&gt; service.bat install MyService</code></pre></div>
 
 <p>When installing the service with a non-default name,
-tomcat8.exe and tomcat8w.exe may be renamed to
+tomcat9.exe and tomcat9w.exe may be renamed to
 match the chosen service name. To do this, use the <code>--rename</code>
 option.</p>
 
@@ -342,11 +342,11 @@ option.</p>
 C:\&gt; service.bat install MyService --rename</code></pre></div>
 
 <p>
-If using tomcat8.exe, you need to use the <b>//IS//</b> parameter.</p>
+If using tomcat9.exe, you need to use the <b>//IS//</b> parameter.</p>
 
-<div class="codeBox"><pre><code>Install the service named 'Tomcat8'
-C:\&gt; tomcat8 //IS//Tomcat8 --DisplayName="Apache Tomcat 8" ^
-     --Install="C:\Program Files\Tomcat\bin\tomcat8.exe" --Jvm=auto ^
+<div class="codeBox"><pre><code>Install the service named 'Tomcat9'
+C:\&gt; tomcat9 //IS//Tomcat9 --DisplayName="Apache Tomcat 9" ^
+     --Install="C:\Program Files\Tomcat\bin\tomcat9.exe" --Jvm=auto ^
      --StartMode=jvm --StopMode=jvm ^
      --StartClass=org.apache.catalina.startup.Bootstrap --StartParams=start ^
      --StopClass=org.apache.catalina.startup.Bootstrap --StopParams=stop</code></pre></div>
@@ -356,15 +356,15 @@ C:\&gt; tomcat8 //IS//Tomcat8 --DisplayName="Apache Tomcat 8" ^
 To update the service parameters, you need to use the <b>//US//</b> parameter.
 </p>
 
-<div class="codeBox"><pre><code>Update the service named 'Tomcat8'
-C:\&gt; tomcat8 //US//Tomcat8 --Description="Apache Tomcat Server - https://tomcat.apache.org/ " ^
+<div class="codeBox"><pre><code>Update the service named 'Tomcat9'
+C:\&gt; tomcat9 //US//Tomcat9 --Description="Apache Tomcat Server - https://tomcat.apache.org/ " ^
      --Startup=auto --Classpath=%JAVA_HOME%\lib\tools.jar;%CATALINA_HOME%\bin\bootstrap.jar</code></pre></div>
 
 <p>If you gave the service an optional name, you need to specify it like this:
 </p>
 
 <div class="codeBox"><pre><code>Update the service named 'MyService'
-C:\&gt; tomcat8 //US//MyService --Description="Apache Tomcat Server - https://tomcat.apache.org/ " ^
+C:\&gt; tomcat9 //US//MyService --Description="Apache Tomcat Server - https://tomcat.apache.org/ " ^
      --Startup=auto --Classpath=%JAVA_HOME%\lib\tools.jar;%CATALINA_HOME%\bin\bootstrap.jar</code></pre></div>
 
 </div><h3 id="Removing_services">Removing services</h3><div class="text">
@@ -372,27 +372,27 @@ C:\&gt; tomcat8 //US//MyService --Description="Apache Tomcat Server - https://to
 To remove the service, you need to use the <b>//DS//</b> parameter.<br>
 If the service is running it will be stopped and then deleted.</p>
 
-<div class="codeBox"><pre><code>Remove the service named 'Tomcat8'
-C:\&gt; tomcat8 //DS//Tomcat8</code></pre></div>
+<div class="codeBox"><pre><code>Remove the service named 'Tomcat9'
+C:\&gt; tomcat9 //DS//Tomcat9</code></pre></div>
 
 <p>If you gave the service an optional name, you need to specify it like this:
 </p>
 
 <div class="codeBox"><pre><code>Remove the service named 'MyService'
-C:\&gt; tomcat8 //DS//MyService</code></pre></div>
+C:\&gt; tomcat9 //DS//MyService</code></pre></div>
 
 </div><h3 id="Debugging_services">Debugging services</h3><div class="text">
 <p>
 To run the service in console mode, you need to use the <b>//TS//</b> parameter.
 The service shutdown can be initiated by pressing <b>CTRL+C</b> or
 <b>CTRL+BREAK</b>.
-If you rename the tomcat8.exe to testservice.exe then you can just execute the
+If you rename the tomcat9.exe to testservice.exe then you can just execute the
 testservice.exe and this command mode will be executed by default.</p>
 
-<div class="codeBox"><pre><code>Run the service named 'Tomcat8' in console mode
-C:\&gt; tomcat8 //TS//Tomcat8 [additional arguments]
+<div class="codeBox"><pre><code>Run the service named 'Tomcat9' in console mode
+C:\&gt; tomcat9 //TS//Tomcat9 [additional arguments]
 Or simply execute:
-C:\&gt; tomcat8</code></pre></div>
+C:\&gt; tomcat9</code></pre></div>
 
 </div><h3 id="Multiple_Instances">Multiple Instances</h3><div class="text">
 <p>
@@ -430,18 +430,18 @@ name of the Tomcat installation directory. Then create a second environment
 variable CATALINA_BASE and point this to the instance folder. Then run
 "service.bat install" command specifying a service name.</p>
 
-<div class="codeBox"><pre><code>set CATALINA_HOME=c:\tomcat_8
-set CATALINA_BASE=c:\tomcat_8\instances\instance1
+<div class="codeBox"><pre><code>set CATALINA_HOME=c:\tomcat_9
+set CATALINA_BASE=c:\tomcat_9\instances\instance1
 service.bat install instance1</code></pre></div>
 
 <p>
-To modify the service settings, you can run <b>tomcat8w //ES//instance1</b>.
+To modify the service settings, you can run <b>tomcat9w //ES//instance1</b>.
 </p>
 <p>
 For additional instances, create additional instance folder, update the
 CATALINA_BASE environment variable, and run the "service.bat install" again.</p>
 
-<div class="codeBox"><pre><code>set CATALINA_BASE=c:\tomcat_8\instances\instance2
+<div class="codeBox"><pre><code>set CATALINA_BASE=c:\tomcat_9\instances\instance2
 service.bat install instance2</code></pre></div>
 
 </div></div></div></div></div><footer><div id="footer">

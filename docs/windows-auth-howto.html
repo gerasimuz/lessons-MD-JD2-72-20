@@ -1,7 +1,7 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
-<html lang="en"><head><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="./images/docs-stylesheet.css" rel="stylesheet" type="text/css"><title>Apache Tomcat 8 (8.5.57) - Windows Authentication How-To</title></head><body><div id="wrapper"><header><div id="header"><div><div><div class="logo noPrint"><a href="https://tomcat.apache.org/"><img alt="Tomcat Home" src="./images/tomcat.png"></a></div><div style="height: 1px;"></div><div class="asfLogo noPrint"><a href="https://www.apache.org/" target="_blank"><img src="./images/asf-logo.svg" alt="The Apache Software Foundation" style="width: 266px; height: 83px;"></a></div><h1>Apache Tomcat 8</h1><div class="versionInfo">
-          Version 8.5.57,
-          <time datetime="2020-06-30">Jun 30 2020</time></div><div style="height: 1px;"></div><div style="clear: left;"></div></div></div></div></header><div id="middle"><div><div id="mainLeft" class="noprint"><div><nav><div><h2>Links</h2><ul><li><a href="index.html">Docs Home</a></li><li><a href="https://wiki.apache.org/tomcat/FAQ">FAQ</a></li><li><a href="#comments_section">User Comments</a></li></ul></div><div><h2>User Guide</h2><ul><li><a href="introduction.html">1) Introduction</a></li><li><a href="setup.html">2) Setup</a></li><li><a href="appdev/index.html">3) First webapp</a></li><li><a href="deployer-howto.html">4) Deployer</a></li><li><a href="manager-howto.html">5) Manager</a></li><li><a href="host-manager-howto.html">6) Host Manager</a></li><li><a href="realm-howto.html">7) Realms and AAA</a></li><li><a href="security-manager-howto.html">8) Security Manager</a></li><li><a href="jndi-resources-howto.html">9) JNDI Resources</a></li><li><a href="jndi-datasource-examples-howto.html">10) JDBC DataSources</a></li><li><a href="class-loader-howto.html">11) Classloading</a></li><li><a href="jasper-howto.html">12) JSPs</a></li><li><a href="ssl-howto.html">13) SSL/TLS</a></li><li><a href="ssi-howto.html">14) SSI</a></li><li><a href="cgi-howto.html">15) CGI</a></li><li><a href="proxy-howto.html">16) Proxy Support</a></li><li><a href="mbeans-descriptors-howto.html">17) MBeans Descriptors</a></li><li><a href="default-servlet.html">18) Default Servlet</a></li><li><a href="cluster-howto.html">19) Clustering</a></li><li><a href="balancer-howto.html">20) Load Balancer</a></li><li><a href="connectors.html">21) Connectors</a></li><li><a href="monitoring.html">22) Monitoring and Management</a></li><li><a href="logging.html">23) Logging</a></li><li><a href="apr.html">24) APR/Native</a></li><li><a href="virtual-hosting-howto.html">25) Virtual Hosting</a></li><li><a href="aio.html">26) Advanced IO</a></li><li><a href="extras.html">27) Additional Components</a></li><li><a href="maven-jars.html">28) Mavenized</a></li><li><a href="security-howto.html">29) Security Considerations</a></li><li><a href="windows-service-howto.html">30) Windows Service</a></li><li><a href="windows-auth-howto.html">31) Windows Authentication</a></li><li><a href="jdbc-pool.html">32) Tomcat's JDBC Pool</a></li><li><a href="web-socket-howto.html">33) WebSocket</a></li><li><a href="rewrite.html">34) Rewrite</a></li></ul></div><div><h2>Reference</h2><ul><li><a href="RELEASE-NOTES.txt">Release Notes</a></li><li><a href="config/index.html">Configuration</a></li><li><a href="api/index.html">Tomcat Javadocs</a></li><li><a href="servletapi/index.html">Servlet 4.0 Javadocs</a></li><li><a href="jspapi/index.html">JSP 2.3 Javadocs</a></li><li><a href="elapi/index.html">EL 3.0 Javadocs</a></li><li><a href="websocketapi/index.html">WebSocket 1.1 Javadocs</a></li><li><a href="jaspicapi/index.html">JASPIC 1.1 Javadocs</a></li><li><a href="annotationapi/index.html">Common Annotations 1.2 Javadocs</a></li><li><a href="https://tomcat.apache.org/connectors-doc/">JK 1.2 Documentation</a></li></ul></div><div><h2>Apache Tomcat Development</h2><ul><li><a href="building.html">Building</a></li><li><a href="changelog.html">Changelog</a></li><li><a href="https://wiki.apache.org/tomcat/TomcatVersions">Status</a></li><li><a href="developers.html">Developers</a></li><li><a href="architecture/index.html">Architecture</a></li><li><a href="funcspecs/index.html">Functional Specs.</a></li><li><a href="tribes/introduction.html">Tribes</a></li></ul></div></nav></div></div><div id="mainRight"><div id="content"><h2>Windows Authentication How-To</h2><h3 id="Table_of_Contents">Table of Contents</h3><div class="text">
+<html lang="en"><head><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="./images/docs-stylesheet.css" rel="stylesheet" type="text/css"><title>Apache Tomcat 9 (9.0.37) - Windows Authentication How-To</title></head><body><div id="wrapper"><header><div id="header"><div><div><div class="logo noPrint"><a href="https://tomcat.apache.org/"><img alt="Tomcat Home" src="./images/tomcat.png"></a></div><div style="height: 1px;"></div><div class="asfLogo noPrint"><a href="https://www.apache.org/" target="_blank"><img src="./images/asf-logo.svg" alt="The Apache Software Foundation" style="width: 266px; height: 83px;"></a></div><h1>Apache Tomcat 9</h1><div class="versionInfo">
+          Version 9.0.37,
+          <time datetime="2020-06-30">Jun 30 2020</time></div><div style="height: 1px;"></div><div style="clear: left;"></div></div></div></div></header><div id="middle"><div><div id="mainLeft" class="noprint"><div><nav><div><h2>Links</h2><ul><li><a href="index.html">Docs Home</a></li><li><a href="https://wiki.apache.org/tomcat/FAQ">FAQ</a></li><li><a href="#comments_section">User Comments</a></li></ul></div><div><h2>User Guide</h2><ul><li><a href="introduction.html">1) Introduction</a></li><li><a href="setup.html">2) Setup</a></li><li><a href="appdev/index.html">3) First webapp</a></li><li><a href="deployer-howto.html">4) Deployer</a></li><li><a href="manager-howto.html">5) Manager</a></li><li><a href="host-manager-howto.html">6) Host Manager</a></li><li><a href="realm-howto.html">7) Realms and AAA</a></li><li><a href="security-manager-howto.html">8) Security Manager</a></li><li><a href="jndi-resources-howto.html">9) JNDI Resources</a></li><li><a href="jndi-datasource-examples-howto.html">10) JDBC DataSources</a></li><li><a href="class-loader-howto.html">11) Classloading</a></li><li><a href="jasper-howto.html">12) JSPs</a></li><li><a href="ssl-howto.html">13) SSL/TLS</a></li><li><a href="ssi-howto.html">14) SSI</a></li><li><a href="cgi-howto.html">15) CGI</a></li><li><a href="proxy-howto.html">16) Proxy Support</a></li><li><a href="mbeans-descriptors-howto.html">17) MBeans Descriptors</a></li><li><a href="default-servlet.html">18) Default Servlet</a></li><li><a href="cluster-howto.html">19) Clustering</a></li><li><a href="balancer-howto.html">20) Load Balancer</a></li><li><a href="connectors.html">21) Connectors</a></li><li><a href="monitoring.html">22) Monitoring and Management</a></li><li><a href="logging.html">23) Logging</a></li><li><a href="apr.html">24) APR/Native</a></li><li><a href="virtual-hosting-howto.html">25) Virtual Hosting</a></li><li><a href="aio.html">26) Advanced IO</a></li><li><a href="maven-jars.html">27) Mavenized</a></li><li><a href="security-howto.html">28) Security Considerations</a></li><li><a href="windows-service-howto.html">29) Windows Service</a></li><li><a href="windows-auth-howto.html">30) Windows Authentication</a></li><li><a href="jdbc-pool.html">31) Tomcat's JDBC Pool</a></li><li><a href="web-socket-howto.html">32) WebSocket</a></li><li><a href="rewrite.html">33) Rewrite</a></li><li><a href="cdi.html">34) CDI 2 and JAX-RS</a></li><li><a href="graal.html">35) GraalVM Support</a></li></ul></div><div><h2>Reference</h2><ul><li><a href="RELEASE-NOTES.txt">Release Notes</a></li><li><a href="config/index.html">Configuration</a></li><li><a href="api/index.html">Tomcat Javadocs</a></li><li><a href="servletapi/index.html">Servlet 4.0 Javadocs</a></li><li><a href="jspapi/index.html">JSP 2.3 Javadocs</a></li><li><a href="elapi/index.html">EL 3.0 Javadocs</a></li><li><a href="websocketapi/index.html">WebSocket 1.1 Javadocs</a></li><li><a href="jaspicapi/index.html">JASPIC 1.1 Javadocs</a></li><li><a href="annotationapi/index.html">Common Annotations 1.3 Javadocs</a></li><li><a href="https://tomcat.apache.org/connectors-doc/">JK 1.2 Documentation</a></li></ul></div><div><h2>Apache Tomcat Development</h2><ul><li><a href="building.html">Building</a></li><li><a href="changelog.html">Changelog</a></li><li><a href="https://wiki.apache.org/tomcat/TomcatVersions">Status</a></li><li><a href="developers.html">Developers</a></li><li><a href="architecture/index.html">Architecture</a></li><li><a href="funcspecs/index.html">Functional Specs.</a></li><li><a href="tribes/introduction.html">Tribes</a></li></ul></div></nav></div></div><div id="mainRight"><div id="content"><h2>Windows Authentication How-To</h2><h3 id="Table_of_Contents">Table of Contents</h3><div class="text">
 <ul><li><a href="#Overview">Overview</a></li><li><a href="#Built-in_Tomcat_support">Built-in Tomcat support</a><ol><li><a href="#Domain_Controller">Domain Controller</a></li><li><a href="#Tomcat_instance_(Windows_server)">Tomcat instance (Windows server)</a></li><li><a href="#Tomcat_instance_(Linux_server)">Tomcat instance (Linux server)</a></li><li><a href="#Web_application">Web application</a></li><li><a href="#Client">Client</a></li><li><a href="#References">References</a></li></ol></li><li><a href="#Third_party_libraries">Third party libraries</a><ol><li><a href="#Waffle">Waffle</a></li><li><a href="#Spring_Security_-_Kerberos_Extension">Spring Security - Kerberos Extension</a></li><li><a href="#Jespa">Jespa</a></li><li><a href="#SPNEGO_AD_project_at_SourceForge">SPNEGO AD project at SourceForge</a></li></ol></li><li><a href="#Reverse_proxies">Reverse proxies</a><ol><li><a href="#Microsoft_IIS">Microsoft IIS</a></li><li><a href="#Apache_httpd">Apache httpd</a></li></ol></li></ul>
 </div><h3 id="Overview">Overview</h3><div class="text">
 <p>Integrated Windows authentication is most frequently used within intranet
@@ -38,9 +38,11 @@ the places it is used.</li>
 <li>Tomcat must run as the domain account with which the SPN has been associated
 or as domain admin. It is <strong>NOT</strong> recommended to run Tomcat under a
 domain admin user.</li>
-<li>The domain name (<code>DEV.LOCAL</code>) is not case sensitive when used in
-the ktpass command, nor when used in jaas.conf</li>
-<li>The domain must be specified when using the ktpass command</li>
+<li>Convention is that the domain name (<code>dev.local</code>) is always used in
+lower case. The domain name is typically not case sensitive.</li>
+<li>Convention is that the Kerberos realm name (<code>DEV.LOCAL</code>) is always
+used in upper case. The realm name <strong>is</strong> case sensitive.</li>
+<li>The domain must be specified when using the ktpass command.</li>
 </ul>
 <p>There are four components to the configuration of the built-in Tomcat
 support for Windows authentication. The domain controller, the server hosting
@@ -49,8 +51,8 @@ machine. The following sections describe the configuration required for each
 component.</p>
 <p>The names of the three machines used in the configuration examples below are
 win-dc01.dev.local (the domain controller), win-tc01.dev.local (the Tomcat
-instance) and win-pc01.dev.local (client). All are members of the DEV.LOCAL
-domain.</p>
+instance) and win-pc01.dev.local (client). All are members of the
+<code>dev.local</code> domain.</p>
 <p>Note: In order to use the passwords in the steps below, the domain password
 policy had to be relaxed. This is not recommended for production environments.
 </p>
@@ -83,14 +85,14 @@ policy had to be relaxed. This is not recommended for production environments.
   user is <code>test</code> with a password of <code>testpass</code>.</li>
   </ul>
   <p>The above steps have been tested on a domain controller running Windows
-  Server 2008 R2 64-bit Standard using the Windows Server 2003 functional level
+  Server 2019 Standard using the Windows Server 2016 functional level
   for both the forest and the domain.
   </p>
   </div></div>
 
   <div class="subsection"><h4 id="Tomcat_instance_(Windows_server)">Tomcat instance (Windows server)</h4><div class="text">
-  <p>These steps assume that Tomcat and a Java 6 JDK/JRE have already been
-  installed and configured and that Tomcat is running as the tc01@DEV.LOCAL
+  <p>These steps assume that Tomcat and a Java 8 JDK/JRE have already been
+  installed and configured and that Tomcat is running as the tc01@dev.local
   user. The steps to configure the Tomcat instance for Windows authentication
   are as follows:
   </p>
@@ -101,7 +103,7 @@ policy had to be relaxed. This is not recommended for production environments.
   <code>$CATALINA_BASE/conf/krb5.ini</code>. The file used in this how-to
   contained:<div class="codeBox"><pre><code>[libdefaults]
 default_realm = DEV.LOCAL
-default_keytab_name = FILE:c:\apache-tomcat-8.5.x\conf\tomcat.keytab
+default_keytab_name = FILE:c:\apache-tomcat-9.0.x\conf\tomcat.keytab
 default_tkt_enctypes = rc4-hmac,aes256-cts-hmac-sha1-96,aes128-cts-hmac-sha1-96
 default_tgs_enctypes = rc4-hmac,aes256-cts-hmac-sha1-96,aes128-cts-hmac-sha1-96
 forwardable=true
@@ -123,7 +125,7 @@ dev.local= DEV.LOCAL
     doNotPrompt=true
     principal="HTTP/win-tc01.dev.local@DEV.LOCAL"
     useKeyTab=true
-    keyTab="c:/apache-tomcat-8.5.x/conf/tomcat.keytab"
+    keyTab="c:/apache-tomcat-9.0.x/conf/tomcat.keytab"
     storeKey=true;
 };
 
@@ -132,7 +134,7 @@ com.sun.security.jgss.krb5.accept {
     doNotPrompt=true
     principal="HTTP/win-tc01.dev.local@DEV.LOCAL"
     useKeyTab=true
-    keyTab="c:/apache-tomcat-8.5.x/conf/tomcat.keytab"
+    keyTab="c:/apache-tomcat-9.0.x/conf/tomcat.keytab"
     storeKey=true;
 };</code></pre></div>
   The location of this file can be changed by setting the
@@ -144,10 +146,12 @@ com.sun.security.jgss.krb5.accept {
   </ul>
   <p>The SPNEGO authenticator will work with any <a href="config/realm.html">
   Realm</a> but if used with the JNDI Realm, by default the JNDI Realm will use
-  the user's delegated credentials to connect to the Active Directory.
-  </p>
+  the user's delegated credentials to connect to the Active Directory. If
+  only the authenticated user name is required then the AuthenticatedUserRealm
+  may be used that will simply return a Principal based on the authenticated
+  user name that does not have any roles.</p>
   <p>The above steps have been tested on a Tomcat server running Windows Server
-  2008 R2 64-bit Standard with an Oracle 1.6.0_24 64-bit JDK.</p>
+  2019 Standard with AdoptOpenJDK 8u232-b09 (64-bit).</p>
   </div></div>
 
   <div class="subsection"><h4 id="Tomcat_instance_(Linux_server)">Tomcat instance (Linux server)</h4><div class="text">

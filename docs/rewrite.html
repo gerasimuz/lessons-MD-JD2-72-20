@@ -1,7 +1,7 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
-<html lang="en"><head><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="./images/docs-stylesheet.css" rel="stylesheet" type="text/css"><title>Apache Tomcat 8 (8.5.57) - The rewrite Valve</title><meta name="author" content="Remy Maucherat"></head><body><div id="wrapper"><header><div id="header"><div><div><div class="logo noPrint"><a href="https://tomcat.apache.org/"><img alt="Tomcat Home" src="./images/tomcat.png"></a></div><div style="height: 1px;"></div><div class="asfLogo noPrint"><a href="https://www.apache.org/" target="_blank"><img src="./images/asf-logo.svg" alt="The Apache Software Foundation" style="width: 266px; height: 83px;"></a></div><h1>Apache Tomcat 8</h1><div class="versionInfo">
-          Version 8.5.57,
-          <time datetime="2020-06-30">Jun 30 2020</time></div><div style="height: 1px;"></div><div style="clear: left;"></div></div></div></div></header><div id="middle"><div><div id="mainLeft" class="noprint"><div><nav><div><h2>Links</h2><ul><li><a href="index.html">Docs Home</a></li><li><a href="https://wiki.apache.org/tomcat/FAQ">FAQ</a></li><li><a href="#comments_section">User Comments</a></li></ul></div><div><h2>User Guide</h2><ul><li><a href="introduction.html">1) Introduction</a></li><li><a href="setup.html">2) Setup</a></li><li><a href="appdev/index.html">3) First webapp</a></li><li><a href="deployer-howto.html">4) Deployer</a></li><li><a href="manager-howto.html">5) Manager</a></li><li><a href="host-manager-howto.html">6) Host Manager</a></li><li><a href="realm-howto.html">7) Realms and AAA</a></li><li><a href="security-manager-howto.html">8) Security Manager</a></li><li><a href="jndi-resources-howto.html">9) JNDI Resources</a></li><li><a href="jndi-datasource-examples-howto.html">10) JDBC DataSources</a></li><li><a href="class-loader-howto.html">11) Classloading</a></li><li><a href="jasper-howto.html">12) JSPs</a></li><li><a href="ssl-howto.html">13) SSL/TLS</a></li><li><a href="ssi-howto.html">14) SSI</a></li><li><a href="cgi-howto.html">15) CGI</a></li><li><a href="proxy-howto.html">16) Proxy Support</a></li><li><a href="mbeans-descriptors-howto.html">17) MBeans Descriptors</a></li><li><a href="default-servlet.html">18) Default Servlet</a></li><li><a href="cluster-howto.html">19) Clustering</a></li><li><a href="balancer-howto.html">20) Load Balancer</a></li><li><a href="connectors.html">21) Connectors</a></li><li><a href="monitoring.html">22) Monitoring and Management</a></li><li><a href="logging.html">23) Logging</a></li><li><a href="apr.html">24) APR/Native</a></li><li><a href="virtual-hosting-howto.html">25) Virtual Hosting</a></li><li><a href="aio.html">26) Advanced IO</a></li><li><a href="extras.html">27) Additional Components</a></li><li><a href="maven-jars.html">28) Mavenized</a></li><li><a href="security-howto.html">29) Security Considerations</a></li><li><a href="windows-service-howto.html">30) Windows Service</a></li><li><a href="windows-auth-howto.html">31) Windows Authentication</a></li><li><a href="jdbc-pool.html">32) Tomcat's JDBC Pool</a></li><li><a href="web-socket-howto.html">33) WebSocket</a></li><li><a href="rewrite.html">34) Rewrite</a></li></ul></div><div><h2>Reference</h2><ul><li><a href="RELEASE-NOTES.txt">Release Notes</a></li><li><a href="config/index.html">Configuration</a></li><li><a href="api/index.html">Tomcat Javadocs</a></li><li><a href="servletapi/index.html">Servlet 4.0 Javadocs</a></li><li><a href="jspapi/index.html">JSP 2.3 Javadocs</a></li><li><a href="elapi/index.html">EL 3.0 Javadocs</a></li><li><a href="websocketapi/index.html">WebSocket 1.1 Javadocs</a></li><li><a href="jaspicapi/index.html">JASPIC 1.1 Javadocs</a></li><li><a href="annotationapi/index.html">Common Annotations 1.2 Javadocs</a></li><li><a href="https://tomcat.apache.org/connectors-doc/">JK 1.2 Documentation</a></li></ul></div><div><h2>Apache Tomcat Development</h2><ul><li><a href="building.html">Building</a></li><li><a href="changelog.html">Changelog</a></li><li><a href="https://wiki.apache.org/tomcat/TomcatVersions">Status</a></li><li><a href="developers.html">Developers</a></li><li><a href="architecture/index.html">Architecture</a></li><li><a href="funcspecs/index.html">Functional Specs.</a></li><li><a href="tribes/introduction.html">Tribes</a></li></ul></div></nav></div></div><div id="mainRight"><div id="content"><h2>The rewrite Valve</h2><h3 id="Introduction">Introduction</h3><div class="text">
+<html lang="en"><head><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="./images/docs-stylesheet.css" rel="stylesheet" type="text/css"><title>Apache Tomcat 9 (9.0.37) - The rewrite Valve</title><meta name="author" content="Remy Maucherat"></head><body><div id="wrapper"><header><div id="header"><div><div><div class="logo noPrint"><a href="https://tomcat.apache.org/"><img alt="Tomcat Home" src="./images/tomcat.png"></a></div><div style="height: 1px;"></div><div class="asfLogo noPrint"><a href="https://www.apache.org/" target="_blank"><img src="./images/asf-logo.svg" alt="The Apache Software Foundation" style="width: 266px; height: 83px;"></a></div><h1>Apache Tomcat 9</h1><div class="versionInfo">
+          Version 9.0.37,
+          <time datetime="2020-06-30">Jun 30 2020</time></div><div style="height: 1px;"></div><div style="clear: left;"></div></div></div></div></header><div id="middle"><div><div id="mainLeft" class="noprint"><div><nav><div><h2>Links</h2><ul><li><a href="index.html">Docs Home</a></li><li><a href="https://wiki.apache.org/tomcat/FAQ">FAQ</a></li><li><a href="#comments_section">User Comments</a></li></ul></div><div><h2>User Guide</h2><ul><li><a href="introduction.html">1) Introduction</a></li><li><a href="setup.html">2) Setup</a></li><li><a href="appdev/index.html">3) First webapp</a></li><li><a href="deployer-howto.html">4) Deployer</a></li><li><a href="manager-howto.html">5) Manager</a></li><li><a href="host-manager-howto.html">6) Host Manager</a></li><li><a href="realm-howto.html">7) Realms and AAA</a></li><li><a href="security-manager-howto.html">8) Security Manager</a></li><li><a href="jndi-resources-howto.html">9) JNDI Resources</a></li><li><a href="jndi-datasource-examples-howto.html">10) JDBC DataSources</a></li><li><a href="class-loader-howto.html">11) Classloading</a></li><li><a href="jasper-howto.html">12) JSPs</a></li><li><a href="ssl-howto.html">13) SSL/TLS</a></li><li><a href="ssi-howto.html">14) SSI</a></li><li><a href="cgi-howto.html">15) CGI</a></li><li><a href="proxy-howto.html">16) Proxy Support</a></li><li><a href="mbeans-descriptors-howto.html">17) MBeans Descriptors</a></li><li><a href="default-servlet.html">18) Default Servlet</a></li><li><a href="cluster-howto.html">19) Clustering</a></li><li><a href="balancer-howto.html">20) Load Balancer</a></li><li><a href="connectors.html">21) Connectors</a></li><li><a href="monitoring.html">22) Monitoring and Management</a></li><li><a href="logging.html">23) Logging</a></li><li><a href="apr.html">24) APR/Native</a></li><li><a href="virtual-hosting-howto.html">25) Virtual Hosting</a></li><li><a href="aio.html">26) Advanced IO</a></li><li><a href="maven-jars.html">27) Mavenized</a></li><li><a href="security-howto.html">28) Security Considerations</a></li><li><a href="windows-service-howto.html">29) Windows Service</a></li><li><a href="windows-auth-howto.html">30) Windows Authentication</a></li><li><a href="jdbc-pool.html">31) Tomcat's JDBC Pool</a></li><li><a href="web-socket-howto.html">32) WebSocket</a></li><li><a href="rewrite.html">33) Rewrite</a></li><li><a href="cdi.html">34) CDI 2 and JAX-RS</a></li><li><a href="graal.html">35) GraalVM Support</a></li></ul></div><div><h2>Reference</h2><ul><li><a href="RELEASE-NOTES.txt">Release Notes</a></li><li><a href="config/index.html">Configuration</a></li><li><a href="api/index.html">Tomcat Javadocs</a></li><li><a href="servletapi/index.html">Servlet 4.0 Javadocs</a></li><li><a href="jspapi/index.html">JSP 2.3 Javadocs</a></li><li><a href="elapi/index.html">EL 3.0 Javadocs</a></li><li><a href="websocketapi/index.html">WebSocket 1.1 Javadocs</a></li><li><a href="jaspicapi/index.html">JASPIC 1.1 Javadocs</a></li><li><a href="annotationapi/index.html">Common Annotations 1.3 Javadocs</a></li><li><a href="https://tomcat.apache.org/connectors-doc/">JK 1.2 Documentation</a></li></ul></div><div><h2>Apache Tomcat Development</h2><ul><li><a href="building.html">Building</a></li><li><a href="changelog.html">Changelog</a></li><li><a href="https://wiki.apache.org/tomcat/TomcatVersions">Status</a></li><li><a href="developers.html">Developers</a></li><li><a href="architecture/index.html">Architecture</a></li><li><a href="funcspecs/index.html">Functional Specs.</a></li><li><a href="tribes/introduction.html">Tribes</a></li></ul></div></nav></div></div><div id="mainRight"><div id="content"><h2>The rewrite Valve</h2><h3 id="Introduction">Introduction</h3><div class="text">
 
   <p>The rewrite valve implements URL rewrite functionality in a way that is
   very similar to mod_rewrite from Apache HTTP Server.</p>
@@ -65,7 +65,7 @@
         <li>
           <strong>RewriteMap expansions</strong>: These are
           expansions of the form <strong><code>${mapname:key|default}</code></strong>.
-          See <a href="#mapfunc">the documentation for
+          See <a href="#RewriteMap">the documentation for
           RewriteMap</a> for more details.
         </li>
         <li>
@@ -217,8 +217,9 @@
         <code>SSL_SRP_USER</code>, <code>SSL_SRP_USERINFO</code>,
         <code>SSL_CLIENT_VERIFY</code>,
         <code>SSL_CLIENT_SAN_OTHER_msUPN_n</code>,
-        <code>SSL_CLIENT_CERT_RFC4523_CEA</code>.
-        Also, the variables related to the server
+        <code>SSL_CLIENT_CERT_RFC4523_CEA</code>,
+        <code>SSL_SERVER_SAN_OTHER_dnsSRV_n</code>.
+        When OpenSSL is used, the variables related to the server
         certificate, prefixed by <code>SSL_SERVER_</code> are not available.
         Example:
         <code>%{SSL:SSL_CIPHER_USEKEYSIZE}</code> may expand to
@@ -230,7 +231,7 @@
         value of a header sent in the HTTP request.
         Example: <code>%{HTTP:Proxy-Connection}</code> is
         the value of the HTTP header
-        ``<code>Proxy-Connection:</code>''.</li>
+        '<code>Proxy-Connection:</code>'.</li>
 
       </ol>
 
@@ -342,7 +343,7 @@ RewriteRule ...some special stuff for any of these hosts...</code></pre></div>
       <p><strong>Example:</strong></p>
 
        <p>To rewrite the Homepage of a site according to the
-        ``<code>User-Agent:</code>'' header of the request, you can
+        '<code>User-Agent:</code>' header of the request, you can
         use the following: </p>
 
 <div class="codeBox"><pre><code>RewriteCond  %{HTTP_USER_AGENT}  ^Mozilla.*
@@ -385,10 +386,60 @@ RewriteRule  ^/$                 /homepage.std.html  [L]</code></pre></div>
 <div class="codeBox"><pre><code>package org.apache.catalina.valves.rewrite;
 
 public interface RewriteMap {
+    default String setParameters(String params...); // calls setParameters(String) with the first parameter if there is only one
     public String setParameters(String params);
     public String lookup(String key);
 }</code></pre></div>
 
+    <p>The referenced implementation of such a class &ndash; in our example <code>rewriteMapClassName</code> &ndash;
+    will be instantiated and initialized with the optional parameter &ndash; <code>optionalParameters</code> from above
+    (be careful with whitespace) &ndash; by calling <code>setParameters(String)</code>. That instance
+    will then be registered under the name given as the first paramter of <code>RewriteMap</code> rule.</p>
+
+    <p>Note: Starting with Tomcat 9 you can use more than one parameter. These have to be separated by spaces. Parameters
+    can be quoted with ". This enables space characters inside parameters.</p>
+
+    <p>That map instance will be given the the lookup value that is configured in the corresponding <code>RewriteRule</code> by
+    calling <code>lookup(String)</code>. Your implementation is free to return <code>null</code> to indicate,
+    that the given default should be used, or to return a replacement value.</p>
+
+    <p>Say, you want to implement a rewrite map function that converts all lookup keys to uppercase. You
+    would start by implementing a class that implements the <code>RewriteMap</code> interface.</p>
+
+<div class="codeBox"><pre><code>package example.maps;
+
+import org.apache.catalina.valves.rewrite.RewriteMap;
+
+public class UpperCaseMap implements RewriteMap {
+
+  @Override
+  public String setParameters(String params) {
+    // nothing to be done here
+    return null;
+  }
+
+  @Override
+  public String lookup(String key) {
+    if (key == null) {
+      return null;
+    }
+    return key.toUpperCase();
+  }
+
+}</code></pre></div>
+
+    <p>Compile this class, put it into a jar and place that jar in <code>${CATALINA_BASE}/lib</code>.</p>
+
+    <p>Having done that, you can now define a map with the <code>RewriteMap</code> directive
+    and further on use that map in a <code>RewriteRule</code>.</p>
+
+<div class="codeBox"><pre><code>RewriteMap uc example.maps.UpperCaseMap
+
+RewriteRule ^/(.*)$ ${uc:$1}
+</code></pre></div>
+
+    <p>With this setup a request to the url path <code>/index.html</code> would get routed
+    to <code>/INDEX.HTML</code>.</p>
   </div></div>
 
   <div class="subsection"><h4 id="RewriteRule">RewriteRule</h4><div class="text">
@@ -403,7 +454,7 @@ public interface RewriteMap {
 
       <p>Pattern is a perl compatible regular
       expression, which is applied to the current URL.
-      ``Current'' means the value of the URL when this rule is
+      'Current' means the value of the URL when this rule is
       applied. This may not be the originally requested URL,
       which may already have matched a previous rule, and have been
       altered.</p>
@@ -425,8 +476,8 @@ public interface RewriteMap {
 <pre>
 <strong>Text:</strong>
   <strong><code>.</code></strong>           Any single character
-  <strong><code>[</code></strong>chars<strong><code>]</code></strong>     Character class: Any character of the class ``chars''
-  <strong><code>[^</code></strong>chars<strong><code>]</code></strong>    Character class: Not a character of the class ``chars''
+  <strong><code>[</code></strong>chars<strong><code>]</code></strong>     Character class: Any character of the class 'chars'
+  <strong><code>[^</code></strong>chars<strong><code>]</code></strong>    Character class: Not a character of the class 'chars'
   text1<strong><code>|</code></strong>text2 Alternative: text1 or text2
 
 <strong>Quantifiers:</strong>
@@ -465,8 +516,8 @@ public interface RewriteMap {
       <p>In the rules, the NOT character
        ('<code>!</code>') is also available as a possible pattern
       prefix. This enables you to negate a pattern; to say, for instance:
-      ``<em>if the current URL does <strong>NOT</strong> match this
-      pattern</em>''. This can be used for exceptional cases, where
+      '<em>if the current URL does <strong>NOT</strong> match this
+      pattern</em>'. This can be used for exceptional cases, where
       it is easier to match the negative pattern, or as a last
       default rule.</p>
 
@@ -493,7 +544,7 @@ cannot use <code>$N</code> in the substitution string!
         <li>server-variables as in rule condition test-strings
         (<code>%{VARNAME}</code>)</li>
 
-        <li><a href="#mapfunc">mapping-function</a> calls
+        <li><a href="#RewriteMap">mapping-function</a> calls
         (<code>${mapname:key|default}</code>)</li>
       </ol>
       <p>Back-references are identifiers of the form
@@ -548,9 +599,9 @@ cannot use <code>$N</code> in the substitution string!
         the flag has no effect. If the rule does
         <strong>not</strong> match, then all following chained
         rules are skipped. For instance, it can be used to remove the
-        ``<code>.www</code>'' part, inside a per-directory rule set,
+        '<code>.www</code>' part, inside a per-directory rule set,
         when you let an external redirect happen (where the
-        ``<code>.www</code>'' part should not occur!).</li>
+        '<code>.www</code>' part should not occur!).</li>
 
         <li>
         '<strong><code>cookie|CO=</code></strong><em>NAME</em>:<em>VAL</em>:<em>domain</em>[:<em>lifetime</em>[:<em>path</em>]]'
@@ -652,7 +703,7 @@ cannot use <code>$N</code> in the substitution string!
           <strong>r</strong>edirect</span>)<br>
           Prefix <em>Substitution</em> with
           <code>http://thishost[:thisport]/</code> (which makes the
-          new URL a URI) to force a external redirection. If no
+          new URL a URI) to force an external redirection. If no
           <em>code</em> is given, an HTTP response of 302 (FOUND, previously MOVED
           TEMPORARILY) will be returned. If you want to use other response
           codes in the range 300-399, simply specify the appropriate number
@@ -660,8 +711,8 @@ cannot use <code>$N</code> in the substitution string!
           <code>temp</code> (default), <code>permanent</code>,
           <code>seeother</code>. Use this for rules to
           canonicalize the URL and return it to the client - to
-          translate ``<code>/~</code>'' into
-          ``<code>/u/</code>'', or to always append a slash to
+          translate '<code>/~</code>' into
+          '<code>/u/</code>', or to always append a slash to
           <code>/u/</code><em>user</em>, etc.<br>
           <strong>Note:</strong> When you use this flag, make
           sure that the substitution field is a valid URL! Otherwise,

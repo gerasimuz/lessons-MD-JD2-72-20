@@ -1,6 +1,6 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
-<html lang="en"><head><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="../images/docs-stylesheet.css" rel="stylesheet" type="text/css"><title>Apache Tomcat 8 Configuration Reference (8.5.57) - The HTTP Connector</title><meta name="author" content="Craig R. McClanahan"><meta name="author" content="Yoav Shapira"></head><body><div id="wrapper"><header><div id="header"><div><div><div class="logo noPrint"><a href="https://tomcat.apache.org/"><img alt="Tomcat Home" src="../images/tomcat.png"></a></div><div style="height: 1px;"></div><div class="asfLogo noPrint"><a href="https://www.apache.org/" target="_blank"><img src="../images/asf-logo.svg" alt="The Apache Software Foundation" style="width: 266px; height: 83px;"></a></div><h1>Apache Tomcat 8 Configuration Reference</h1><div class="versionInfo">
-          Version 8.5.57,
+<html lang="en"><head><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="../images/docs-stylesheet.css" rel="stylesheet" type="text/css"><title>Apache Tomcat 9 Configuration Reference (9.0.37) - The HTTP Connector</title><meta name="author" content="Craig R. McClanahan"><meta name="author" content="Yoav Shapira"></head><body><div id="wrapper"><header><div id="header"><div><div><div class="logo noPrint"><a href="https://tomcat.apache.org/"><img alt="Tomcat Home" src="../images/tomcat.png"></a></div><div style="height: 1px;"></div><div class="asfLogo noPrint"><a href="https://www.apache.org/" target="_blank"><img src="../images/asf-logo.svg" alt="The Apache Software Foundation" style="width: 266px; height: 83px;"></a></div><h1>Apache Tomcat 9 Configuration Reference</h1><div class="versionInfo">
+          Version 9.0.37,
           <time datetime="2020-06-30">Jun 30 2020</time></div><div style="height: 1px;"></div><div style="clear: left;"></div></div></div></div></header><div id="middle"><div><div id="mainLeft" class="noprint"><div><nav><div><h2>Links</h2><ul><li><a href="../index.html">Docs Home</a></li><li><a href="index.html">Config Ref. Home</a></li><li><a href="https://wiki.apache.org/tomcat/FAQ">FAQ</a></li><li><a href="#comments_section">User Comments</a></li></ul></div><div><h2>Top Level Elements</h2><ul><li><a href="server.html">Server</a></li><li><a href="service.html">Service</a></li></ul></div><div><h2>Executors</h2><ul><li><a href="executor.html">Executor</a></li></ul></div><div><h2>Connectors</h2><ul><li><a href="http.html">HTTP/1.1</a></li><li><a href="http2.html">HTTP/2</a></li><li><a href="ajp.html">AJP</a></li></ul></div><div><h2>Containers</h2><ul><li><a href="context.html">Context</a></li><li><a href="engine.html">Engine</a></li><li><a href="host.html">Host</a></li><li><a href="cluster.html">Cluster</a></li></ul></div><div><h2>Nested Components</h2><ul><li><a href="cookie-processor.html">CookieProcessor</a></li><li><a href="credentialhandler.html">CredentialHandler</a></li><li><a href="globalresources.html">Global Resources</a></li><li><a href="jar-scanner.html">JarScanner</a></li><li><a href="jar-scan-filter.html">JarScanFilter</a></li><li><a href="listeners.html">Listeners</a></li><li><a href="loader.html">Loader</a></li><li><a href="manager.html">Manager</a></li><li><a href="realm.html">Realm</a></li><li><a href="resources.html">Resources</a></li><li><a href="sessionidgenerator.html">SessionIdGenerator</a></li><li><a href="valve.html">Valve</a></li></ul></div><div><h2>Cluster Elements</h2><ul><li><a href="cluster.html">Cluster</a></li><li><a href="cluster-manager.html">Manager</a></li><li><a href="cluster-channel.html">Channel</a></li><li><a href="cluster-membership.html">Channel/Membership</a></li><li><a href="cluster-sender.html">Channel/Sender</a></li><li><a href="cluster-receiver.html">Channel/Receiver</a></li><li><a href="cluster-interceptor.html">Channel/Interceptor</a></li><li><a href="cluster-valve.html">Valve</a></li><li><a href="cluster-deployer.html">Deployer</a></li><li><a href="cluster-listener.html">ClusterListener</a></li></ul></div><div><h2>web.xml</h2><ul><li><a href="filter.html">Filter</a></li></ul></div><div><h2>Other</h2><ul><li><a href="systemprops.html">System properties</a></li><li><a href="jaspic.html">JASPIC</a></li></ul></div></nav></div></div><div id="mainRight"><div id="content"><h2>The HTTP Connector</h2><h3 id="Table_of_Contents">Table of Contents</h3><div class="text">
 <ul><li><a href="#Introduction">Introduction</a></li><li><a href="#Attributes">Attributes</a><ol><li><a href="#Common_Attributes">Common Attributes</a></li><li><a href="#Standard_Implementation">Standard Implementation</a></li><li><a href="#Java_TCP_socket_attributes">Java TCP socket attributes</a></li><li><a href="#NIO_specific_configuration">NIO specific configuration</a></li><li><a href="#NIO2_specific_configuration">NIO2 specific configuration</a></li><li><a href="#APR/native_specific_configuration">APR/native specific configuration</a></li></ol></li><li><a href="#Nested_Components">Nested Components</a></li><li><a href="#Special_Features">Special Features</a><ol><li><a href="#HTTP/1.1_and_HTTP/1.0_Support">HTTP/1.1 and HTTP/1.0 Support</a></li><li><a href="#HTTP/2_Support">HTTP/2 Support</a></li><li><a href="#Proxy_Support">Proxy Support</a></li><li><a href="#SSL_Support">SSL Support</a></li><li><a href="#SSL_Support_-_SSLHostConfig">SSL Support - SSLHostConfig</a></li><li><a href="#SSL_Support_-_Certificate">SSL Support - Certificate</a></li><li><a href="#SSL_Support_-_Connector_-_NIO_and_NIO2">SSL Support - Connector - NIO and NIO2</a></li><li><a href="#Key_store_types">Key store types</a></li><li><a href="#SSL_Support_-_Connector_-_NIO_and_NIO2_(deprecated)">SSL Support - Connector - NIO and NIO2 (deprecated)</a></li><li><a href="#SSL_Support_-_Connector_-_APR/Native_(deprecated)">SSL Support - Connector - APR/Native (deprecated)</a></li><li><a href="#Connector_Comparison">Connector Comparison</a></li></ol></li></ul>
 </div><h3 id="Introduction">Introduction</h3><div class="text">
@@ -194,18 +194,9 @@
       SSL Connector or a non SSL connector that is receiving data from a
       SSL accelerator, like a crypto card, an SSL appliance or even a webserver.
       The default value is <code>false</code>.</p>
-    </td></tr><tr><td><code class="attributeName">sendReasonPhrase</code></td><td>
-      <p>Set this attribute to <code>true</code> if you wish to have
-      a reason phrase in the response.
-      The default value is <code>false</code>.</p>
-      <p><strong>Note:</strong> This option is deprecated and will be removed
-      in Tomcat 9. The reason phrase will not be sent.</p>
     </td></tr><tr><td><code class="attributeName">URIEncoding</code></td><td>
       <p>This specifies the character encoding used to decode the URI bytes,
-      after %xx decoding the URL. If not specified, UTF-8 will be used unless
-      the <code>org.apache.catalina.STRICT_SERVLET_COMPLIANCE</code>
-      <a href="systemprops.html">system property</a> is set to <code>true</code>
-      in which case ISO-8859-1 will be used.</p>
+      after %xx decoding the URL. The default value is <code>UTF-8</code>.</p>
     </td></tr><tr><td><code class="attributeName">useBodyEncodingForURI</code></td><td>
       <p>This specifies if the encoding specified in contentType should be used
       for URI query parameters, instead of using the URIEncoding. This
@@ -250,12 +241,6 @@
       all possible request processing threads are in use.  Any requests
       received when the queue is full will be refused.  The default
       value is 100.</p>
-    </td></tr><tr><td><code class="attributeName">acceptorThreadCount</code></td><td>
-      <p>The number of threads to be used to accept connections. Increase this
-      value on a multi CPU machine, although you would never really need more
-      than <code>2</code>. Also, with a lot of non keep alive connections, you
-      might want to increase this value as well. Default value is
-      <code>1</code>.</p>
     </td></tr><tr><td><code class="attributeName">acceptorThreadPriority</code></td><td>
       <p>The priority of the acceptor threads. The threads used to accept
       new connections. The default value is <code>5</code> (the value of the
@@ -274,10 +259,10 @@
       IPv4 addresses depending on the setting of <strong>ipv6v6only</strong>) if
       configured with <code>::</code>.</p>
     </td></tr><tr><td><code class="attributeName">allowHostHeaderMismatch</code></td><td>
-      <p>By default Tomcat will allow requests that specify a host in the
+      <p>By default Tomcat will reject requests that specify a host in the
       request line but specify a different host in the host header. This
-      check can be enabled by setting this attribute to <code>false</code>. If
-      not specified, the default is <code>true</code>.</p>
+      check can be disabled by setting this attribute to <code>true</code>. If
+      not specified, the default is <code>false</code>.</p>
     </td></tr><tr><td><code class="attributeName">allowedTrailerHeaders</code></td><td>
       <p>By default Tomcat will ignore all trailer headers when processing
       chunked input. For a header to be processed, it must be added to this
@@ -378,9 +363,8 @@
       falls below <strong>maxConnections</strong> at which point the server will
       start accepting and processing new connections again. Note that once the
       limit has been reached, the operating system may still accept connections
-      based on the <code>acceptCount</code> setting. The default value varies by
-      connector type. For NIO and NIO2 the default is <code>10000</code>.
-      For APR/native, the default is <code>8192</code>.</p>
+      based on the <code>acceptCount</code> setting. The default value
+      is <code>8192</code>.</p>
       <p>For NIO/NIO2 only, setting the value to -1, will disable the
       maxConnections feature and connections will not be counted.</p>
     </td></tr><tr><td><code class="attributeName">maxCookieCount</code></td><td>
@@ -459,8 +443,7 @@
       value (e.g. the header name is not a token) this setting determines if the
       request will be rejected with a 400 response (<code>true</code>) or if the
       illegal header be ignored (<code>false</code>). The default value is
-      <code>false</code> which will cause the request to be processed but the
-      illegal header will be ignored.</p>
+      <code>true</code> which will cause the request to be rejected.</p>
     </td></tr><tr><td><code class="attributeName">rejectIllegalHeaderName</code></td><td>
       <p>This attribute is deprecated. It will be removed in Tomcat 10 onwards.
       It is now an alias for <strong>rejectIllegalHeader</strong>.</p>
@@ -528,6 +511,16 @@
       that if an executor is configured any value set for this attribute will be
       recorded correctly but it will be reported (e.g. via JMX) as
       <code>-1</code> to make clear that it is not used.</p>
+    </td></tr><tr><td><code class="attributeName">throwOnFailure</code></td><td>
+      <p>If the Connector experiences an Exception during a Lifecycle transition
+      should the Exception be rethrown or logged? If not specified, the default
+      of <code>false</code> will be used. Note that the default can be changed
+      by the <code>org.apache.catalina.startup.EXIT_ON_INIT_FAILURE</code>
+      system property.</p>
+    </td></tr><tr><td><code class="attributeName">useAsyncIO</code></td><td>
+      <p>(bool) Use this attribute to enable or disable usage of the
+      asynchronous IO API. The default value is <code>true</code> except when
+      using the APR connector due to low performance.</p>
     </td></tr><tr><td><code class="attributeName">useKeepAliveResponseHeader</code></td><td>
       <p>(bool) Use this attribute to enable or disable the addition of the
       <code>Keep-Alive</code> HTTP response header as described in
@@ -613,17 +606,7 @@
           Attribute
         </th><th style="width: 85%;">
           Description
-        </th></tr><tr><td><code class="attributeName">pollerThreadCount</code></td><td>
-        <p>(int)The number of threads to be used to run for the polling events.
-        Default value is <code>1</code> per processor but not more than 2.<br>
-        When accepting a socket, the operating system holds a global lock. So the benefit of
-        going above 2 threads diminishes rapidly. Having more than one thread is for
-        system that need to accept connections very rapidly. However usually just
-        increasing <code>acceptCount</code> will solve that problem.
-        Increasing this value may also be beneficial when a large amount of send file
-        operations are going on.
-        </p>
-      </td></tr><tr><td><code class="attributeName">pollerThreadPriority</code></td><td>
+        </th></tr><tr><td><code class="attributeName">pollerThreadPriority</code></td><td>
         <p>(int)The priority of the poller threads.
         The default value is <code>5</code> (the value of the
         <code>java.lang.Thread.NORM_PRIORITY</code> constant). See the JavaDoc
@@ -720,6 +703,14 @@
         can decide to keep it or let it be GC'd. Use this option when the
         command line <code>org.apache.tomcat.util.net.NioSelectorShared</code>
         value is set to false. Default value is <code>-1</code> (unlimited).</p>
+      </td></tr><tr><td><code class="attributeName">selectorPool.shared</code></td><td>
+        <p>(bool)Set this value to <code>false</code> if you wish to
+        use a selector for each thread. When you set it to <code>false</code>, you can
+        control the size of the pool of selectors by using the
+        <strong>selectorPool.maxSelectors</strong> attribute.
+        Default is <code>true</code> or the value of the
+        <code>org.apache.tomcat.util.net.NioSelectorShared</code> system
+        property if present.</p>
       </td></tr><tr><td><code class="attributeName">useInheritedChannel</code></td><td>
         <p>(bool)Defines if this connector should inherit an inetd/systemd network socket.
         Only one connector can inherit a network socket. This can option can be
@@ -1055,8 +1046,7 @@
     </td></tr><tr><td><code class="attributeName">honorCipherOrder</code></td><td>
       <p>Set to <code>true</code> to enforce the server's cipher order
       (from the <code>ciphers</code> setting) instead of allowing
-      the client to choose the cipher. The default is <code>false</code>.
-      Use of this feature requires Java 8 or later.</p>
+      the client to choose the cipher. The default is <code>false</code>.</p>
     </td></tr><tr><td><code class="attributeName">hostName</code></td><td>
       <p>The name of the SSL Host. This should either be the fully qualified
       domain name (e.g. <code>tomcat.apache.org</code>) or a wild card domain
