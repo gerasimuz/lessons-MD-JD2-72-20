@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="19be4ca0-3ec1-4eca-a686-c61bda316ad3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../15_xml/15_xml.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/23_Spring2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/gera/ClassicalMusic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/gera/FolkMusic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/gera/Music.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/gera/MusicPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/gera/RockMusic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/gera/TestSpring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/musicPlayer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Training/Singleton/Singleton.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Training/Singleton/src/by/gera/Singleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Training/Singleton/src/by/gera/command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Training/Singleton/src/by/gera/command/CommandStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Training/Singleton/src/by/gera/command/CommandStop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Training/Singleton/src/by/gera/command/Computer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Training/Singleton/src/by/gera/command/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Training/Singleton/src/by/gera/fabric/DigitalWatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Training/Singleton/src/by/gera/fabric/DigitalWatchMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Training/Singleton/src/by/gera/fabric/RomeWatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Training/Singleton/src/by/gera/fabric/RomeWatchMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Training/Singleton/src/by/gera/fabric/Watch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Training/Singleton/src/by/gera/fabric/WatchMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/Servers/.indexes/c7/history.index" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/Servers/.indexes/c7/history.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jst.server.tomcat.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jst.server.tomcat.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.browser.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.browser.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.jsdt.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.jsdt.ui.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.server.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.server.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.server.discovery.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.server.discovery.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.xml.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.xml.ui.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.ui/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.ui/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/participantsIndexNames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/participantsIndexNames.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.j2ee.ui/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.j2ee.ui/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.j2ee.web/webLibrariesCache.index" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.j2ee.web/webLibrariesCache.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.j2ee/earLibrariesCache.index" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.j2ee/earLibrariesCache.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.ui.refactoring/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.ui.refactoring/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core.ui/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core.ui/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_0.cfs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/segments.gen" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/segments.gen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/4f139a6f5138a5101dae722ec39ceccd/segments.gen" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/4f139a6f5138a5101dae722ec39ceccd/segments.gen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/workspacestate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/workspacestate.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.jsdt.core/externalLibsTimeStamps" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.jsdt.core/externalLibsTimeStamps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes/savedIndexNames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes/savedIndexNames.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.jsdt.core/variablesAndContainers.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.jsdt.core/variablesAndContainers.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/servers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/servers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp0/conf/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp0/conf/server.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.validation/dep.index" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.validation/dep.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.xml.core/system_catalog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.xml.core/system_catalog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/version.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../05LoginSignUpDZ4/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../05LoginSignUpDZ4/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../05LoginSignUpDZ4/Jsp/Jsp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../05LoginSignUpDZ4/Jsp/Jsp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08_jdbc_DZ4/src/controller/commandImpl/WelcomeNewUserCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../08_jdbc_DZ4/src/controller/commandImpl/WelcomeNewUserCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09_hotelReservation/HotelReservation.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/../09_hotelReservation/HotelReservation.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09_hotelReservation/HotelReservation.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/../09_hotelReservation/HotelReservation.mwb.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ROOT/RELEASE-NOTES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ROOT/RELEASE-NOTES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ROOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ROOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ROOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ROOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Servers/Tomcat v8.5 Server at localhost-config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Servers/Tomcat v8.5 Server at localhost-config/server.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/BUILDING.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/BUILDING.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/RELEASE-NOTES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/RELEASE-NOTES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/RUNNING.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/RUNNING.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/aio.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/aio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/annotationapi/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/annotationapi/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/api/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/api/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/appdev/deployment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/appdev/deployment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/appdev/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/appdev/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/appdev/installation.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/appdev/installation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/appdev/introduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/appdev/introduction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/appdev/processes.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/appdev/processes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/appdev/sample/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/appdev/sample/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/appdev/source.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/appdev/source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/apr.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/apr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/architecture/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/architecture/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/architecture/overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/architecture/overview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/architecture/requestProcess.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/architecture/requestProcess.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/architecture/startup.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/architecture/startup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/balancer-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/balancer-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/building.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/building.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/cgi-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/cgi-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/changelog.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/changelog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/class-loader-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/class-loader-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/cluster-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/cluster-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/comments.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/comments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/ajp.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/ajp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/automatic-deployment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/automatic-deployment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/cluster-channel.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/cluster-channel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/cluster-deployer.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/cluster-deployer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/cluster-interceptor.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/cluster-interceptor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/cluster-listener.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/cluster-listener.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/cluster-manager.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/cluster-manager.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/cluster-membership.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/cluster-membership.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/cluster-receiver.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/cluster-receiver.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/cluster-sender.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/cluster-sender.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/cluster-valve.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/cluster-valve.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/cluster.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/cluster.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/context.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/context.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/cookie-processor.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/cookie-processor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/credentialhandler.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/credentialhandler.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/engine.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/engine.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/executor.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/executor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/filter.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/filter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/globalresources.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/globalresources.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/host.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/host.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/http.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/http.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/http2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/http2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/jar-scan-filter.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/jar-scan-filter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/jar-scanner.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/jar-scanner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/jaspic.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/jaspic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/listeners.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/listeners.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/loader.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/loader.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/manager.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/manager.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/realm.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/realm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/resources.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/resources.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/server.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/server.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/service.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/service.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/sessionidgenerator.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/sessionidgenerator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/systemprops.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/systemprops.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/config/valve.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/config/valve.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/connectors.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/connectors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/default-servlet.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/default-servlet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/deployer-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/deployer-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/developers.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/developers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/elapi/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/elapi/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/funcspecs/fs-admin-apps.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/funcspecs/fs-admin-apps.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/funcspecs/fs-admin-objects.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/funcspecs/fs-admin-objects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/funcspecs/fs-admin-opers.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/funcspecs/fs-admin-opers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/funcspecs/fs-default.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/funcspecs/fs-default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/funcspecs/fs-jdbc-realm.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/funcspecs/fs-jdbc-realm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/funcspecs/fs-jndi-realm.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/funcspecs/fs-jndi-realm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/funcspecs/fs-memory-realm.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/funcspecs/fs-memory-realm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/funcspecs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/funcspecs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/funcspecs/mbean-names.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/funcspecs/mbean-names.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/host-manager-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/host-manager-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/html-host-manager-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/html-host-manager-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/html-manager-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/html-manager-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/introduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/introduction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/jasper-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/jasper-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/jaspicapi/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/jaspicapi/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/jdbc-pool.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/jdbc-pool.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/jndi-datasource-examples-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/jndi-datasource-examples-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/jndi-resources-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/jndi-resources-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/jspapi/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/jspapi/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/logging.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/logging.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/manager-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/manager-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/maven-jars.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/maven-jars.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/mbeans-descriptors-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/mbeans-descriptors-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/monitoring.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/monitoring.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/proxy-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/proxy-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/realm-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/realm-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/rewrite.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/rewrite.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/security-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/security-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/security-manager-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/security-manager-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/servletapi/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/servletapi/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/setup.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/setup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/ssi-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/ssi-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/ssl-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/ssl-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/tribes/developers.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/tribes/developers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/tribes/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/tribes/faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/tribes/interceptors.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/tribes/interceptors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/tribes/introduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/tribes/introduction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/tribes/membership.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/tribes/membership.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/tribes/setup.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/tribes/setup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/tribes/status.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/tribes/status.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/tribes/transport.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/tribes/transport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/virtual-hosting-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/virtual-hosting-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/web-socket-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/web-socket-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/websocketapi/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/websocketapi/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/windows-auth-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/windows-auth-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/windows-service-howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/windows-service-howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/CookieExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/CookieExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/HelloWorldExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/HelloWorldExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/RequestHeaderExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/RequestHeaderExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/RequestInfoExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/RequestInfoExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/RequestParamExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/RequestParamExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/ServletToJsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/ServletToJsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/SessionExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/SessionExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/Async0$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/Async0$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/Async0.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/Async0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/Async1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/Async1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/Async1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/Async1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/Async2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/Async2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/Async2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/Async2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/Async3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/Async3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/AsyncStockContextListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/AsyncStockContextListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/AsyncStockServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/AsyncStockServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/Stockticker$Stock.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/Stockticker$Stock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/Stockticker$TickListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/Stockticker$TickListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/Stockticker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/async/Stockticker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/cal/Entries.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/cal/Entries.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/cal/Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/cal/Entry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/cal/JspCalendar.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/cal/JspCalendar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/cal/TableBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/cal/TableBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/checkbox/CheckTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/checkbox/CheckTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/colors/ColorGameBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/colors/ColorGameBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/compressionFilters/CompressionFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/compressionFilters/CompressionFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/compressionFilters/CompressionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/compressionFilters/CompressionFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/compressionFilters/CompressionFilterTestServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/compressionFilters/CompressionFilterTestServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/compressionFilters/CompressionResponseStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/compressionFilters/CompressionResponseStream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/compressionFilters/CompressionServletResponseWrapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/compressionFilters/CompressionServletResponseWrapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/dates/JspCalendar.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/dates/JspCalendar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/error/Smart.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/error/Smart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/examples/ExampleTagBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/examples/ExampleTagBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/examples/FooTag.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/examples/FooTag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/examples/FooTagExtraInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/examples/FooTagExtraInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/examples/LogTag.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/examples/LogTag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/examples/ValuesTag.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/examples/ValuesTag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/filters/ExampleFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/filters/ExampleFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/filters/ExampleFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/filters/ExampleFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/jsp2/examples/BookBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/jsp2/examples/BookBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/jsp2/examples/FooBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/jsp2/examples/FooBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/jsp2/examples/ValuesBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/jsp2/examples/ValuesBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/jsp2/examples/el/Functions.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/jsp2/examples/el/Functions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/jsp2/examples/simpletag/EchoAttributesTag.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/jsp2/examples/simpletag/EchoAttributesTag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/jsp2/examples/simpletag/FindBookSimpleTag.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/jsp2/examples/simpletag/FindBookSimpleTag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/jsp2/examples/simpletag/HelloWorldSimpleTag.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/jsp2/examples/simpletag/HelloWorldSimpleTag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/jsp2/examples/simpletag/RepeatSimpleTag.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/jsp2/examples/simpletag/RepeatSimpleTag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/jsp2/examples/simpletag/ShuffleSimpleTag.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/jsp2/examples/simpletag/ShuffleSimpleTag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/jsp2/examples/simpletag/TileSimpleTag.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/jsp2/examples/simpletag/TileSimpleTag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/listeners/ContextListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/listeners/ContextListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/listeners/SessionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/listeners/SessionListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/nonblocking/ByteCounter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/nonblocking/ByteCounter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/nonblocking/ByteCounter$CounterListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/nonblocking/ByteCounter$CounterListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/nonblocking/ByteCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/nonblocking/ByteCounter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/nonblocking/NumberWriter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/nonblocking/NumberWriter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/nonblocking/NumberWriter$NumberWriterListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/nonblocking/NumberWriter$NumberWriterListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/nonblocking/NumberWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/nonblocking/NumberWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/num/NumberGuessBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/num/NumberGuessBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/sessions/DummyCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/sessions/DummyCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/util/CookieFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/util/CookieFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/util/HTMLFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/util/HTMLFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/validators/DebugValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/validators/DebugValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/ExamplesConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/ExamplesConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/chat/ChatAnnotation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/chat/ChatAnnotation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/Client$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/DrawMessage$ParseException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/DrawMessage$ParseException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/DrawMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/DrawMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/DrawboardContextListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/DrawboardContextListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/DrawboardContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/DrawboardContextListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint$3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint$3$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/Room$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/Room$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/Room$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/Room$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/Room$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/Room$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/Room$MessageType.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/Room$MessageType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/Room$Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/Room$Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/wsmessages/AbstractWebsocketMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/wsmessages/AbstractWebsocketMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/wsmessages/BinaryWebsocketMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/wsmessages/BinaryWebsocketMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/wsmessages/CloseWebsocketMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/wsmessages/CloseWebsocketMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/wsmessages/StringWebsocketMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/drawboard/wsmessages/StringWebsocketMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/echo/EchoAnnotation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/echo/EchoAnnotation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/echo/EchoAsyncAnnotation$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/echo/EchoAsyncAnnotation$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/echo/EchoAsyncAnnotation$CompletedFuture.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/echo/EchoAsyncAnnotation$CompletedFuture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/echo/EchoAsyncAnnotation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/echo/EchoAsyncAnnotation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/echo/EchoEndpoint$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/echo/EchoEndpoint$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/echo/EchoEndpoint$EchoMessageHandlerBinary.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/echo/EchoEndpoint$EchoMessageHandlerBinary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/echo/EchoEndpoint$EchoMessageHandlerText.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/echo/EchoEndpoint$EchoMessageHandlerText.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/echo/EchoEndpoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/echo/EchoEndpoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/echo/EchoStreamAnnotation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/echo/EchoStreamAnnotation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/snake/Direction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/snake/Direction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/snake/Location$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/snake/Location$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/snake/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/snake/Location.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/snake/Snake.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/snake/Snake.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/snake/SnakeAnnotation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/snake/SnakeAnnotation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/snake/SnakeTimer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/snake/SnakeTimer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/snake/SnakeTimer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/classes/websocket/snake/SnakeTimer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/jsp/plugin/applet/Clock2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/jsp/plugin/applet/Clock2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/servlets/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/servlets/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/websocket/drawboard.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/websocket/drawboard.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../host-manager/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../host-manager/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manager/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../manager/WEB-INF/web.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Tag Library Descriptor" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1jB5JAQEo1RKje1XqkzoH7eBeOC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NEWS_GERA" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunManager">
+    <configuration name="TestSpring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.gera.TestSpring" />
+      <module name="23_Spring2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.gera.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestSpring" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="19be4ca0-3ec1-4eca-a686-c61bda316ad3" name="Default Changelist" comment="" />
+      <created>1603264569834</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603264569834</updated>
+      <workItem from="1603264572441" duration="2103000" />
+      <workItem from="1603364772211" duration="3315000" />
+      <workItem from="1603450020272" duration="2669000" />
+      <workItem from="1603473062316" duration="2040000" />
+      <workItem from="1603475974027" duration="2424000" />
+      <workItem from="1603542301225" duration="12000" />
+      <workItem from="1603550527127" duration="1000" />
+      <workItem from="1603648067467" duration="6000" />
+      <workItem from="1603692312287" duration="42000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="586" y="198" key="#Inspections" timestamp="1603265813264">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="586" y="198" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1603265813264" />
+    <state x="440" y="94" key="#Project_Structure" timestamp="1603265143627">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1603265143627" />
+    <state x="252" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1603477023357">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="252" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603477023357" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1603692349760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603692349760" />
+    <state width="1159" height="279" key="GridCell.Tab.0.bottom" timestamp="1603478475191">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1159" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603478475191" />
+    <state width="1159" height="279" key="GridCell.Tab.0.center" timestamp="1603478475191">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1159" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603478475191" />
+    <state width="1159" height="279" key="GridCell.Tab.0.left" timestamp="1603478475191">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1159" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603478475191" />
+    <state width="1159" height="279" key="GridCell.Tab.0.right" timestamp="1603478475191">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1159" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603478475191" />
+    <state x="34" y="261" key="Maven.ArtifactSearchDialog" timestamp="1603266457163">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="34" y="261" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603266457163" />
+    <state x="9" y="164" key="SettingsEditor" timestamp="1603365687963">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="9" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603365687963" />
+    <state x="253" y="206" key="spring file set editor" timestamp="1603265503834">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="253" y="206" key="spring file set editor/0.0.1920.1040@0.0.1920.1040" timestamp="1603265503834" />
+  </component>
+</project>
