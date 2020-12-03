@@ -76,14 +76,14 @@ public class NewsController {
 			news.setDate(DATE);
 			newsService.createNews(news);
 
-			if (!SessionParams.RESULT_OPERATION_MSG_UPDATE_SUCCESS.equals(session.getAttribute(SessionParams.OPERATION_RESULT_FOR_SESSION))) {
-				session.setAttribute(SessionParams.OPERATION_RESULT_FOR_SESSION, SessionParams.RESULT_OPERATION_MSG_CREATE_SUCCESS);
+			if (!SessionParams.OPER_UPDATE_SUCCESS.equals(session.getAttribute(SessionParams.OPER_RESULT_FOR_SESSION))) {
+				session.setAttribute(SessionParams.OPER_RESULT_FOR_SESSION, SessionParams.OPER_CREATE_SUCCESS);
 			}
 
 			session.setAttribute(SessionParams.CURRENT_PAGE, SessionParams.PAGE_WELCOME);
 
 		} catch (ServiceException e) {
-			session.setAttribute(SessionParams.OPERATION_RESULT_FOR_SESSION, SessionParams.RESULT_OPERATION_MSG_CREATE_UPDATE_FAILED);
+			session.setAttribute(SessionParams.OPER_RESULT_FOR_SESSION, SessionParams.OPER_CREATE_UPDATE_FAILED);
 			logger.error("Error creating news / " + e);
 		}
 
@@ -103,7 +103,7 @@ public class NewsController {
 
 		try {
 			newsService.deleteNews(id);
-			session.setAttribute(SessionParams.OPERATION_RESULT_FOR_SESSION, SessionParams.RESULT_OPERATION_MSG_DELETE_SUCCESS);
+			session.setAttribute(SessionParams.OPER_RESULT_FOR_SESSION, SessionParams.OPER_DELETE_SUCCESS);
 		} catch (ServiceException e) {
 			logger.error("Error deleting news by ID / " + e);
 			return "redirect:/news/error";
@@ -206,7 +206,7 @@ public class NewsController {
 		try {
 			news = newsService.selectNews(id);
 			session.setAttribute(SessionParams.CURRENT_PAGE, SessionParams.ACTION_UPDATE_NEWS + "?id=" + id);
-			session.setAttribute(SessionParams.OPERATION_RESULT_FOR_SESSION, SessionParams.RESULT_OPERATION_MSG_UPDATE_SUCCESS);
+			session.setAttribute(SessionParams.OPER_RESULT_FOR_SESSION, SessionParams.OPER_UPDATE_SUCCESS);
 		} catch (ServiceException e) {
 			logger.error("Error finding news by id / " + e);
 			return "redirect:/news/error";

@@ -26,20 +26,21 @@ public class NewsServiceImpl implements NewsService {
 	private NewsDAO newsDAO;
 
 	/**	 Creating/Updating news */
+
 	@Override
 	@Transactional
 	public void createNews(News news) throws ServiceException {
 
 		if (NewsValidation.isNoteEmptyField(news)) {
 			logger.error(
-					"Validation isEmptyData FAILED / Some of the fields: 'section', 'author', 'brief', 'content' are empty");
-			throw new ServiceException("Validation isEmptyData FAILED / Some of the fields: 'section', 'author', 'brief', 'content' are empty");
+					"Validation failed. Empty fields ");
+			throw new ServiceException("Validation failed. Empty fields");
 		}
 
 		else if (NewsValidation.isCorrectLength(news)) {
 			logger.error(
-					"Validation isFormLengthNotCorrect  FAILED / Some of the fields: 'section', 'author', 'brief', 'content' are over length");
-			throw new ServiceException("Validation isFormLengthNotCorrect  FAILED / Some of the fields: 'section', 'author', 'brief', 'content' are over length");
+					"Length Validation is incorrect");
+			throw new ServiceException("Length Validation is incorrect");
 		}
 
 		try {
@@ -50,12 +51,8 @@ public class NewsServiceImpl implements NewsService {
 		}
 	}
 
-	/**
-	 * Finds all News from DB
-	 *
-	 * @return List<News>
-	 * @throws ServiceException
-	 */
+	/** Finds all News from DB */
+
 	@Override
 	@Transactional
 	public List<News> selectAllNews() throws ServiceException {
@@ -71,14 +68,8 @@ public class NewsServiceImpl implements NewsService {
 		return news;
 	}
 
-	/**
-	 * Finds News by id from DB
-	 * news == null, if News id is not unique in DB, it must be unique.
-	 *
-	 * @param id
-	 * @return news
-	 * @throws ServiceException
-	 */
+	/** News by id */
+
 	@Override
 	@Transactional
 	public News selectNews(int id) throws ServiceException {
@@ -88,21 +79,17 @@ public class NewsServiceImpl implements NewsService {
 		try {
 			news = newsDAO.selectNews(id);
 			if (news == null) {
-				throw new ServiceException("Error select news by id, because id is not unique or DB problem");
+				throw new ServiceException("Error select news by id");
 			}
 		} catch (DAOException e) {
-			logger.error("Error selecting news by id, because id is not unique or DB problem / ", e);
-			throw new ServiceException("Error selecting news by id, because id is not unique or DB problem / ", e);
+			logger.error("Error selecting news by id ", e);
+			throw new ServiceException("Error selecting news by id", e);
 		}
 		return news;
 	}
 
-	/**
-	 * Deletes News by id from DB
-	 *
-	 * @param id
-	 * @throws ServiceException
-	 */
+	/** Deletes News by id */
+
 	@Override
 	@Transactional
 	public void deleteNews(int id) throws ServiceException {
@@ -115,12 +102,8 @@ public class NewsServiceImpl implements NewsService {
 		}
 	}
 
-	/**
-	 * Deletes list of News from DB
-	 *
-	 * @param id - array of checkboxes selected from Form
-	 * @throws ServiceException
-	 */
+	/** Deletes list of News from DB */
+
 	@Override
 	@Transactional
 	public void deleteSelectedNews(int[] id) throws ServiceException {
@@ -128,8 +111,8 @@ public class NewsServiceImpl implements NewsService {
 		try {
 			newsDAO.deleteSelectedNews(id);
 		} catch (DAOException e) {
-			logger.error("Error group News deleting in DAO / ", e);
-			throw new ServiceException("Error group News deleting in DAO / ", e);
+			logger.error("Error group deleting ", e);
+			throw new ServiceException("Error group deleting ", e);
 		}
 	}
 }

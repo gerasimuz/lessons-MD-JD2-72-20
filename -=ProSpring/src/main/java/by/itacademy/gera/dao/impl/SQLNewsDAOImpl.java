@@ -14,8 +14,8 @@ import by.itacademy.gera.dao.DAOException;
 import by.itacademy.gera.dao.NewsDAO;
 import by.itacademy.gera.entity.News;
 
-@Repository
-public class SQLNewsDAOImpl implements NewsDAO {
+	@Repository
+	public class SQLNewsDAOImpl implements NewsDAO {
 	private static final Logger logger = Logger.getLogger(SQLNewsDAOImpl.class);
 
 	@Autowired
@@ -28,12 +28,8 @@ public class SQLNewsDAOImpl implements NewsDAO {
 	private static final String HQL_SELECT_ALL = "from News";
 	private static final String HQL_SELECT_BY_ID = "from News where id =:newsId";
 
-	/**
-	 * Creates new or updates existing News
-	 *
-	 * @param news
-	 * @throws DAOException
-	 */
+	/** Creates new or updates News */
+
 	@Override
 	public void createNews(News news) throws DAOException {
 
@@ -42,12 +38,8 @@ public class SQLNewsDAOImpl implements NewsDAO {
 		currentSession.saveOrUpdate(news);
 	}
 
-	/**
-	 * Finds all News from DB.
-	 * <p>
-	 *
-	 * @throws DAOException
-	 */
+	/** Finds all News from DB */
+
 	@Override
 	public List<News> selectAllNews() throws DAOException {
 
@@ -60,12 +52,8 @@ public class SQLNewsDAOImpl implements NewsDAO {
 		return news;
 	}
 
-	/**
-	 * Finds News by id.
-	 * <p>
-	 *
-	 * @throws DAOException
-	 */
+	/** Finds News by id */
+
 	@Override
 	public News selectNews(int id) throws DAOException {
 
@@ -78,13 +66,8 @@ public class SQLNewsDAOImpl implements NewsDAO {
 		return news;
 	}
 
-	/**
-	 * Deletes News from DB.
-	 * <p>
-	 * Should execute in Session (transaction) earlier opened in Service layer.
-	 *
-	 * @throws DAOException
-	 */
+	/** Deletes News from DB */
+
 	@Override
 	public void deleteNews(int id) throws DAOException {
 
@@ -102,12 +85,8 @@ public class SQLNewsDAOImpl implements NewsDAO {
 		}
 	}
 
-	/**
-	 * Deletes array of News from DB
-	 *
-	 * @param id - id's checkboxes selected
-	 * @throws DAOException
-	 */
+	/** Deletes array of News from DB */
+
 	@Override
 	public void deleteSelectedNews(int[] id) throws DAOException {
 
