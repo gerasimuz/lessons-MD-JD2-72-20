@@ -43,18 +43,17 @@
 <table border="1">
 
   <tr>
-  <td><font color="black"><c:out value="${table_logo}" /></font></td>
-    <td  align="right" class="classverticalalignbottom">
-    <font size="1" color="black">
-    
-    <a href="${locale_en}"><c:out value="${button_en}" /></a> 
-    <a href="${locale_ru}"><c:out value="${button_ru}" /></a>
-    </font> 
-    </td>
+      <td width="18%">
+
+      </td>
+      <td align="center">
+          <font size="5" color="black"><c:out value="${table_logo}"/></font>
+      </td>
+
   </tr>
   
   <tr>
-  <td width="35%">
+    <td width="18%">
 
       <form action="${action_add_and_update}" method="GET">
 <input type="submit" name="submit" value = "${button_create_news}" class="myButton">
@@ -88,9 +87,9 @@
    ${result_operation_update}
   </c:when>
 
-      <c:when test="${message eq 'Create or Update failed'}">
-          ${result_operation_create_update_fail}
-      </c:when>
+   <c:when test="${message eq 'Create or Update failed'}">
+       ${result_operation_create_update_fail}
+   </c:when>
 
 
    <c:otherwise>
@@ -106,8 +105,17 @@
 
     <tr>
 
-  <td colspan="2" align="center"><b></b></td>
+        <td colspan="2" align="center" class="classverticalalignbottom">
+            <font size="3" color="black">
+
+                <a href="${locale_en}"><c:out value="${button_en}" /></a>
+                <a href="${locale_ru}"><c:out value="${button_ru}" /></a>
+            </font>
+        </td>
   </tr>
+    <tr>
+
+    </tr>
 </table>
 </body>
 </html>

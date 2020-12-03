@@ -50,21 +50,16 @@
 
 <body>
 
-	<table border="1">
+	<table border="0">
 
 		<tr>
-			<td><font color="black"><c:out value="${table_logo}" /></font></td>
-			<td align="right" class="classverticalalignbottom"><font
-				size="1" color="black"> 
-				
-	<a href="${locale_en}"><c:out value="${button_en}" /></a> 
-    <a href="${locale_ru}"><c:out value="${button_ru}" /></a>
-			
-			</font></td>
+			<td></td>
+			<td><font size="5" color="black"><c:out value="${table_logo}" /></font></td>
+
 		</tr>
 
 		<tr>
-			<td width="25%">
+			<td width="18%">
 				        <form action="${add_update}" method="GET">
 				 <input	type="submit" name="submit" value="${button_create_news}"
 						class="myButton">
@@ -81,7 +76,7 @@
 
 
 					<fieldset>
-						<legend><c:out value="${form_logo}" /></legend>
+
 
 						<form:hidden path="id" />
 
@@ -120,8 +115,14 @@
 			</td>
 		</tr>
 		<tr>
-			<td colspan="2" align="center"><b></b></td>
+			<td align="right" colspan="2">
+				<font size="3" color="black">
+					<a href="${locale_en}"><c:out value="${button_en}" /></a>
+					<a href="${locale_ru}"><c:out value="${button_ru}" /></a>
+				</font>
+			</td>
 		</tr>
+
 	</table>
 </body>
 </html>

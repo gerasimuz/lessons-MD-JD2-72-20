@@ -46,122 +46,100 @@
 
 <body>
 
-<table border="1">
+<table border="0">
 
   <tr>
-  <td><font color="red"><c:out value="${table_logo}" /></font></td>
-    <td  align="right" class="classverticalalignbottom">
-    <font size="1" color="black">
-    
-    <a href="${locale_en}"><c:out value="${button_en}" /></a> 
-    <a href="${locale_ru}"><c:out value="${button_ru}" /></a>
-    </font> 
-    </td>
+        <td width="18%">
+
+        </td>
+        <td align="center">
+          <font size="5" color="black"><c:out value="${table_logo}"/></font>
+        </td>
+
   </tr>
   
   <tr>
-  <td width="25%">
+        <td width="18%">
+            <form action="${action_add_and_update}" method="GET">
+                <input type="submit" name="submit" value = "${button_create_news}" class="myButton">
+            </form>
 
-    <form action="${action_add_and_update}" method="GET">
+            <form action="${action_find_all_news}" method="GET">
+                <input type="submit" name="submit" value="${button_list_all_news}" class="myButton"/>
+            </form>
+        </td>
 
-<input type="submit" name="submit" value = "${button_create_news}" class="myButton">
-
-</form>
-
-    <form action="${action_find_all_news}" method="GET">
-
-<input type="submit" name="submit" value="${button_list_all_news}" class="myButton"/>
-
-</form>
-  </td>
-  <td>
+        <td>
   
-<c:url var="deleteSelected" value="/news/deleteNewsSelected" />
+        <c:url var="deleteSelected" value="/news/deleteNewsSelected" />
   
-<form action="${deleteSelected}" method="GET">
+        <form action="${deleteSelected}" method="GET">
+            <fieldset>
+            <c:out value="${operation_view_all_news_logo}" />
 
+            <c:forEach var="news" items="${news}">
+                <c:url var="view" value="/news/findNews">
+                     <c:param name="id" value="${news.id}" />
+                </c:url>
 
-    <fieldset>
-    
-  <legend><c:out value="${form_logo}" /></legend>
- <c:out value="${operation_view_all_news_logo}" /> 
- 
-  <c:forEach var="news" items="${news}">
-  
-<c:url var="view" value="/news/findNews">
-<c:param name="id" value="${news.id}" />
-</c:url>
+                <c:url var="edit" value="/news/updateNews">
+                    <c:param name="id" value="${news.id}" />
+                </c:url>
 
- 
-<c:url var="edit" value="/news/updateNews">
-<c:param name="id" value="${news.id}" />
-</c:url>
+                <c:url var="delete" value="/news/deleteNews">
+                    <c:param name="id" value="${news.id}" />
+                </c:url>
 
-<c:url var="delete" value="/news/deleteNews">
-<c:param name="id" value="${news.id}" />
-</c:url>
-
-	<table class="class1" border="1">
+    <table class="class1" border="0 ">
   
   <tr>
-    <td>
-      <table border=1 class="classhorisontalalightop">
-  <tr>
-    <td width="15%"> <c:out value="${form_author}" /></td>
-     <td> <c:out value="${news.author}" /> </td>
-  </tr>
 
-    <tr>
-    <td><c:out value="${form_brief}" /></td>
-     <td> <c:out value="${news.brief}" /> </td>
-  </tr>
-  
-  <tr>
-    <td><c:out value="${form_content}" /></td>
-     <td> <c:out value="${news.content}" /> </td>
-  </tr>
- 
-</table>
+      <td>
+
+        <table border=0 class="classhorisontalalightop">
+            <tr>
+                <td width="15%"> <c:out value="${form_author}" /></td>
+                <td> <c:out value="${news.author}" /> </td>
+            </tr>
+
+            <tr>
+                <td><c:out value="${form_brief}" /></td>
+                <td> <c:out value="${news.brief}" /> </td>
+            </tr>
+
+            <tr>
+                <td><c:out value="${news.date}" /></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="left"><p align="left">
+                    <a href="${view}"><c:out value="${reference_view}" /></a>
+                    <a href="${edit}"><c:out value="${reference_edit}" /></a>
+                    <a href="${delete}"><c:out value="${reference_delete}" /></a>
+                    <input type="checkbox" name="selected_news" value="${news.id}" >
+                </p>
+                </td>
+            </tr>
+        </table>
      
-    </td>
-    
-     <td class="classhorisontalalightop"><c:out value=" ${news.date}" /></td>
+      </td>
   </tr>
-  
-  <tr>
-  
-    <td colspan="2" align="right"><p align="right">
-    	<a href="${view}"><c:out value="${reference_view}" /></a>
-  
-    	
-    	
-		<a href="${edit}"><c:out value="${reference_edit}" /></a>
-	    <a href="${delete}"><c:out value="${reference_delete}" /></a>
-		<input type="checkbox" name="selected_news" value="${news.id}" >
-    </p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td colspan="2">
-    <br>
-    </td>
-    </tr>
-  
-  </table>
+ </table>
+
 </c:forEach>
+            <input type="button" onclick="history.back();" value="${button_back}" class="myButton"/>
           	<input type="submit" name="submit" value = "${button_delete_selected}" class="myButton" align="right">
-    		<input type="button" onclick="history.back();" value="${button_back}" class="myButton"/>
+
+    <div align="right">
+        <font size="3" color="black">
+            <a href="${locale_en}"><c:out value="${button_en}" /></a>
+            <a href="${locale_ru}"><c:out value="${button_ru}" /></a>
+        </font>
+    </div>
     </fieldset>
   </form>
-  
-
   	</td>
-  </tr>
-   
-    <tr>
-
-  <td colspan="2" align="center"><b></b></td>
   </tr>
 </table>
 </body>

@@ -46,106 +46,95 @@
 <c:url var="action_find_all_news" value="/news/findAllNews" />
 <body>
 
-	<table border="1">
+<table border="0">
 
-		<tr>
-			<td><font color="red"><c:out value="${table_logo}" /></font></td>
-			<td align="right" class="classverticalalignbottom"><font
-				size="1" color="black"> <a
-					href="${locale_en}"><c:out value="${button_en}" /></a> <a
-					href="${locale_ru}"><c:out value="${button_ru}" /></a>
-			</font></td>
-		</tr>
+	<tr>
+		<td></td>
+		<td><font size="5" color="black"><c:out value="${table_logo}" /></font></td>
 
-		<tr>
-			<td width="25%">
+	</tr>
 
-				<form action="${action_add_and_update}" method="GET">
-					<input	type="submit" name="submit" value="${button_create_news}"
+	<tr>
+		<td width="18%">
+			<form action="${action_add_and_update}" method="GET">
+				<input	type="submit" name="submit" value="${button_create_news}"
 						class="myButton" />
-				</form>
+			</form>
 
-
-				<form action="${action_find_all_news}" method="GET">
-					 <input	type="submit" name="submit" value="${button_list_all_news}"
+			<form action="${action_find_all_news}" method="GET">
+				 <input	type="submit" name="submit" value="${button_list_all_news}"
 						class="myButton">
-				</form>
-			</td>
-			<td>
+			</form>
+		</td>
 
+		<td>
+			<form action="controller" method="POST">
+				<fieldset>
+					<c:url var="edit" value="/news/updateNews">
+						<c:param name="id" value="${news.id}" />
+					</c:url>
 
-				<form action="controller" method="POST">
+					<c:url var="delete" value="/news/deleteNews">
+						<c:param name="id" value="${news.id}" />
+					</c:url>
 
-					<fieldset>
+				<table>
+					<tr>
+						<td width="25%"><c:out value="${operation_view_news_logo}" /></td>
+						<td></td>
+					</tr>
 
+					<tr>
+						<td><label for="id">ID</label></td>
+						<td><c:out value="${news.id}" /></td>
+					</tr>
 
- 
-<c:url var="edit" value="/news/updateNews">
-<c:param name="id" value="${news.id}" />
-</c:url>
+					<tr>
+						<td><label for="date"><c:out value="${form_date}" /></label></td>
+						<td><c:out value="${news.date}" /></td>
+					</tr>
 
-<c:url var="delete" value="/news/deleteNews">
-<c:param name="id" value="${news.id}" />
-</c:url>
+					<tr>
+						<td><c:out value="${form_author}" /></td>
+						<td><c:out value=" ${news.author}" /></td>
+					</tr>
 
+					<tr>
+						<td><c:out value="${form_brief}" /></td>
+						<td><c:out value=" ${news.brief}" /></td>
+					</tr>
 
-						<legend><c:out value="${form_logo}" /></legend>
-						<table>
-							<tr>
-								<td width="25%"><c:out value="${operation_view_news_logo}" /></td>
-								<td></td>
+					<tr>
+						<td><c:out value="${form_content}" /></td>
+						<td><c:out value=" ${news.content}" /></td>
+					</tr>
 
-							</tr>
+					<tr>
+						<td colspan="2" align="right"><p align="right">
+						<a href="${edit}"><c:out value="${reference_edit}" /></a>
+						<a href="${delete}"><c:out value="${reference_delete}" /></a>
+					</p>
+				</td>
+				</tr>
+				</table>
 
+				<input type="button" onclick="history.back();"
+					value="${button_back}" class="myButton" />
+					<div align="right">
+						<font size="3" color="black">
+						<a href="${locale_en}"><c:out value="${button_en}" /></a>
+						<a href="${locale_ru}"><c:out value="${button_ru}" /></a>
+					</font>
+					</div>
 
-							<tr>
-								<td><label for="id">ID</label></td>
-								<td><c:out value="${news.id}" /></td>
-							</tr>
+				</fieldset>
 
-							<tr>
-								<td><label for="date"><c:out value="${form_date}" /></label></td>
-								<td><c:out value="${news.date}" /></td>
-							</tr>
-
-
-							<tr>
-								<td><c:out value="${form_author}" /></td>
-								<td><c:out value=" ${news.author}" /></td>
-							</tr>
-
-							<tr>
-								<td><c:out value="${form_brief}" /></td>
-								<td><c:out value=" ${news.brief}" /></td>
-							</tr>
-							<tr>
-								<td><c:out value="${form_content}" /></td>
-								<td><c:out value=" ${news.content}" /></td>
-							</tr>
-							<tr>
-								<td colspan="2" align="right"><p align="right">
-										<a
-											href="${edit}"><c:out value="${reference_edit}" /></a>
-										<a href="${delete}"><c:out value="${reference_delete}" /></a>
-
-									</p></td>
-							</tr>
-						</table>
-
-						<input type="button" onclick="history.back();"
-							value="${button_back}" class="myButton" /> <br>
-
-					</fieldset>
-				</form>
+			</form>
 
 
 			</td>
 		</tr>
 
-		<tr>
-
-			<td colspan="2" align="center"></td>
-		</tr>
 	</table>
 </body>
 </html>

@@ -1,19 +1,23 @@
-table{
+table {
 font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
 font-size: 16px;
-
+border-collapse: collapse;
 text-align: left;
 width:100%;
 }
 th, td {
-padding: 3px;
-border: 0px;
+background: #726353;
 color: black;
+padding: 5px 10px;
 }
 
 td {
 background: #e8bfac;
 vertical-align: top;
+
+}
+th:first-child, td:first-child {
+text-align: left;
 }
 .class1{
 width:100%;

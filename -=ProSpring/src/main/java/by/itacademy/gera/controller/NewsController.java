@@ -48,13 +48,8 @@ public class NewsController {
 		return "errorPage";
 	}
 
-	/** Form for add/update News.
-	 *
-	 * <p>In case new News - shows empty form to fill. In case updating News - shows filled form with
-	 * existing data from DB.
-	 *
-	 * <p> KEY_CURRENT_PAGE session parameter uses for localization. In case changing localization
-	 * while filling new news or updating existing news  form return to the same page or other */
+	/** Form for add/update News.*/
+
 	@GetMapping(value = "/showFormForAddAndUpdate")
 	public String showFormForAddAndUpdate(Model model, HttpSession session) {
 
@@ -67,12 +62,8 @@ public class NewsController {
 		return "news-form";
 	}
 
-	/**
-	 * Creates and updates News
-	 * Accepts News object from Form to create new or update existing News.
-	 * <p>Creates Session parameter KEY_RESULT_OPERATION with result operation message.
-	 *Uses Post/Redirect/Get
-	 */
+	/** * Creates and updates News */
+
 	@PostMapping(value = "/createNews")
 	public String createNews(@ModelAttribute("news") News news, HttpSession session) {
 
@@ -99,19 +90,8 @@ public class NewsController {
 		return "redirect:/news/welcomePage";
 	}
 
-	/**
-	 * Deletes News by id.
-	 * <p>
-	 * Executes only from all News list "/findAllNews" page or "/findNews" page.
-	 *
-	 * <p>
-	 * Session parameter KEY_CURRENT_PAGE  changes if delete operation executes form page "/findNews"
-	 * so after successfully deletion redirect to main page, otherwise KEY_CURRENT_PAGE keeps "/findAllNews" page
-	 * and redirects back to "/findAllNews" after successfully deletion.
-	 *
-	 * @param id      - identifies  News
-	 * @param session - keeps page which redirect after successfully operation result.
-	 */
+	/** * Deletes News by id */
+
 	@GetMapping(value = "/deleteNews")
 	public String deleteNews(@RequestParam("id") int id, HttpSession session,
 							 @SessionAttribute(SessionParams.CURRENT_PAGE) String currentPage) {
@@ -131,10 +111,8 @@ public class NewsController {
 		return "redirect:/news/welcomePage";
 	}
 
-	/**
-	 * Deletes group News from "/findAllNews" page.
-	 * If checkboxes not selected, delete nothing.
-	 */
+	/** * Deletes group News from "/findAllNews" page */
+
 	@GetMapping(value = "/deleteNewsSelected")
 	public String deleteNewsSelected(HttpServletRequest request) {
 		String SELECT_NEWS_GROUP_DELETE = "selected_news";
@@ -151,22 +129,17 @@ public class NewsController {
 			}
 			newsService.deleteSelectedNews(selectAllNewsInt);
 		} catch (NullPointerException e) {
-			logger.error("Nothing to delete because no checkbox selected / " + e);
+			logger.error("no checkbox selected / " + e);
 		} catch (NumberFormatException e) {
-			logger.error("Error parsing selected news, some of id is wrong / " + e);
+			logger.error("Error parsing selected news, id is wrong / " + e);
 		} catch (ServiceException e) {
 			logger.error("Error group News deleting  / " + e);
 		}
 		return "redirect:/news/welcomePage";
 	}
 
-	/**
-	 * Outputs list all news from DB
-	 * <p>
-	 * Session key CURRENT_COMMAND is FIND ALL NEWS page because if we execute
-	 * @param model   -saves list of all News from DB
-	 * @param session -keeps current page with id in case localization changes and the same page should be displayed again.
-	 */
+	/**	 * Outputs list all news from DB */
+
 	@RequestMapping(value = "/findAllNews")
 	public String findAllNews(Model model, HttpSession session) {
 
@@ -185,15 +158,8 @@ public class NewsController {
 		return "output-all-news";
 	}
 
-	/**
-	 * Finds news by id
-	 * Executes only from all News list "/findAllNews" page
-	 * <p>
-	 * Session parameter KEY_CURRENT_PAGE needs if changes Locale, the same page should be displayed.
-	 * @param id      - identifies  News
-	 * @param model   save News to output for user in output-news.jsp page.
-	 * @param session keeps current page with id in case localization changes and the same page should be displayed again.
-	 */
+	/** * Finds news by id */
+
 	@RequestMapping("/findNews")
 	public String findNewsById(@RequestParam("id") int id, Model model, HttpSession session) {
 
@@ -212,15 +178,8 @@ public class NewsController {
 		return "output-news";
 	}
 
-	/**
-	 * Changes localization
-	 * <p>
-	 * Session parameter KEY_CURRENT_PAGE uses to return back to page from which localization changed.
-	 * <p>
-	 *
-	 * @param locale  - new locale to change
-	 * @param session keeps current page with id in case localization changes and the same page should be displayed again.
-	 */
+	/** * Changes localization */
+
 	@RequestMapping("/localization")
 	public String localization(@RequestParam(LOCALE) String locale,  HttpSession session) {
 
@@ -237,12 +196,8 @@ public class NewsController {
 		return page;
 	}
 
-	/**
-	 * Updates existing News from DB
-	 * @param id      - id of News that should be updated.
-	 * @param model   - save News object, transfer to JSP page Form to update.
-	 * @param session - uses to know what is current page, in case changing localization and stay at the same page.
-	 */
+	/**	 * Updates existing News from DB */
+
 	@RequestMapping("/updateNews")
 	public String updateNews(@RequestParam("id") int id, Model model, HttpSession session) {
 
@@ -262,11 +217,8 @@ public class NewsController {
 		return "news-form";
 	}
 
-	/**
-	 * Defines what page redirect after operation. If operation executed from '/findAllNews' -
-	 * stay at the same page, otherwise redirect to main page.
-	 *
-	 */
+	/** * Defines what page redirect after operation. */
+
 	@RequestMapping("/welcomePage")
 	public String welcome(@SessionAttribute(SessionParams.CURRENT_PAGE) String currentPage) {
 

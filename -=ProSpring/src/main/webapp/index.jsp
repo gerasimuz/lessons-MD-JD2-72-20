@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<c:redirect url="/news/mainPage" />
+<c:redirect url="/news/findAllNews" />
 
 </body>
 </html>
